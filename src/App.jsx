@@ -82,9 +82,6 @@ function App() {
               </li>
             </ul>
           </div>
-
-
-         
         </div>
       </div>
 

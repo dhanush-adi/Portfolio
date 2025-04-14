@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="text-[16px] font-medium text-[#9b9b9b] flex justify-center gap-7">
         <a
-          href=""
+          href="https://x.com/rachitdhaka_"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Twitter
@@ -13,7 +13,7 @@ const Footer = () => {
         </a>
 
         <a
-          href=""
+          href="https://www.linkedin.com/in/rachitdhaka/"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           LinkedIn
@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
 
         <a
-          href=""
+          href="https://github.com/rachitdhaka"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Github
@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
 
         <a
-          href=""
+          href="https://codolio.com/profile/rachitdhaka"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Coding
