@@ -12,7 +12,7 @@ function App() {
         <div className="min-w-[50%] min-h-[90%] rounded-3xl p-5">
           {/* top bar , Name and Social Icons  */}
           <div className="text-xl text-[#9b9b9b]">
-            Hello Ji, <span className="font-bold text-3xl text-white">Rachit Dhaka </span>Here
+            I'm , <span className="font-bold text-3xl text-white">Rachit Dhaka </span>
           </div>
 
           {/* Intro Div */}
