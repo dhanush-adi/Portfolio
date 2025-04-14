@@ -1,7 +1,6 @@
 import "./App.css";
 import image from './assets/Orginal.jpg';
 import Footer from "./components/Footer";
-import Social from "./components/Social";
 
 function App() {
   return (
