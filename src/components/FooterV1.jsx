@@ -4,7 +4,8 @@ const FooterV1 = () => {
   return (
     <div>
       <div className="text-[10px] text-[#9b9b9b] flex justify-center  mb-2 underline font-bold">
-        <NavLink to="/version0">
+        <NavLink to="/version0"
+        className= "duration-300">
             v0
         </NavLink>
       </div>
