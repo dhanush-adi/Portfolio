@@ -58,7 +58,7 @@ const V1 = () => {
             </p>
 
             <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl  ">
-              <NavLink to="/about">More Information</NavLink>
+              <NavLink to="/about" >More Information</NavLink>
             </button>
           </section>
 

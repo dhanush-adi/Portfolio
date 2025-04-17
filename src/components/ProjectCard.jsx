@@ -8,7 +8,7 @@ const ProjectCard = ({ image, title, description, url }) => {
       rel="noopener noreferrer"
       className="block rounded-xl shadow-md bg-neutral-200 hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1 group p-4"
     >
-      <div className="relative  ">
+      <div className="relative">
         <img
           src={image}
           alt={title}

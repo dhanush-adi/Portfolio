@@ -14,29 +14,23 @@ const About = () => {
         {/* Mera Intro */}
         <div className="mb-8">
           <p className="font-sans py-4" style={{ wordSpacing: "0.2rem" }}>
-            Hey there, I'm Rachit Dhaka — a builder at heart with a passion for
-            solving real-world problems through tech. I love creating things
-            from the ground up, whether it’s developing my own products or
-            collaborating with forward-thinking teams to bring impactful ideas
-            to life.
+          Hey there, I'm Rachit Dhaka — a builder at heart with a passion for solving real-world problems through tech. I love creating things from the ground up, whether it’s developing my own products or collaborating with forward-thinking teams to bring impactful ideas to life.
           </p>
 
           <p className="font-sans py-4" style={{ wordSpacing: "0.2rem" }}>
-            Most recently, I’ve been diving deep into the Web3 space,
-            participating in global hackathons like ETHIndia, ETHNewDelhi, and
-            Unfold, and building decentralized platforms that aim to reshape how
-            people connect, learn, and grow.
+          When I’m not building, you’ll find me deep into DSA problems — I genuinely enjoy the logic and structure it brings. I also love guiding peers and juniors through their own problem-solving journeys, whether it’s debugging code or helping them crack that tricky concept.
           </p>
 
           <p className="font-sans py-4" style={{ wordSpacing: "0.2rem" }}>
-          Alongside that, I’ve led multiple
-            tech events and hackathons at SRM, where I also co-founded the first
-            official GeeksforGeeks Student Chapter. From mentoring platforms to
-            blockchain-based verification systems, my work sits at the
-            intersection of design, engineering, and purpose. Whether it’s
-            front-end dev, product thinking, or community building — my goal is
-            always the same: create meaningful experiences that people genuinely
-            enjoy using.
+          Most recently, I’ve been exploring the Web3 space, participating in global hackathons like ETHIndia, ETHNewDelhi, and Unfold, and building decentralized platforms that aim to reshape how people connect, learn, and grow.
+            
+          </p>
+          <p className="font-sans py-4" style={{ wordSpacing: "0.2rem" }}>
+          Beyond tech, I’ve also ventured into content creation with my YouTube podcast, Vartalaap Podcast, where I have real and raw conversations with people doing interesting things — from tech to startups and everything in between.
+            
+          </p>
+          <p className="font-sans py-4" style={{ wordSpacing: "0.2rem" }}>
+          Alongside all this, I’ve led multiple tech events and hackathons at SRM, where I also co-founded the first official GeeksforGeeks Student Chapter. Whether it’s front-end dev, product thinking, or community building — my goal is always the same: create meaningful experiences that people genuinely enjoy using.
             
           </p>
 
