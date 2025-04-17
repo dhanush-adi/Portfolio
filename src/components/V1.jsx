@@ -30,7 +30,7 @@ const V1 = () => {
       <header className="flex justify-between items-center mb-20">
         <div>
           <a
-            href="rachitdhaka.vercel.app"
+            href="#"
             className="text-[12px] font-medium font-saans"
           >
             rd
