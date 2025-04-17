@@ -3,12 +3,15 @@ import V1 from "./components/V1";
 import V0 from "./components/V0";
 import FooterV0 from "./components/FooterV0";
 import FooterV1 from "./components/FooterV1";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
 const router = createBrowserRouter(
   [
     {
       path:"/",
       element:
       <div>
+        <Navbar/>
         <V1/>
        
       </div>
@@ -21,6 +24,16 @@ const router = createBrowserRouter(
           <V0/>
         </div>
     },
+
+    {
+      path:"/about",
+      element:
+      <div>
+        <Navbar/>
+        <About/>
+      </div>
+    }
+
   ]
 )
 
