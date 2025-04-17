@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Footer = () => {
+const FooterV0 = () => {
   return (
     <div>
-      <div className="text-[16px] font-medium text-[#9b9b9b] flex justify-center gap-7">
+      <div className="text-[16px] font-medium text-[#9b9b9b] flex justify-center gap-7 ">
         <a
           href="https://x.com/rachitdhaka_"
           className="relative hover:text-white transition-colors duration-300 group"
@@ -37,11 +38,17 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-[10px] text-[#9b9b9b] flex justify-center mt-8">
+      <div className="text-[10px] text-[#9b9b9b] font-bold underline flex justify-center mt-4">
+        <NavLink to="/">
+            v1
+        </NavLink>
+      </div>
+
+      <div className="text-[10px] text-[#9b9b9b] flex justify-center mt-1">
         Made with 💖 . Rachit Dhaka
       </div>
     </div>
   );
 };
 
-export default Footer;
+export default FooterV0;
