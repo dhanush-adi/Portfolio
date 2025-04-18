@@ -25,6 +25,14 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="https://x.com/rachitdhaka_"
+                className="hover:underline font-saans"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.linkedin.com/in/rachitdhaka/"
                 className="hover:underline font-saans"
               >

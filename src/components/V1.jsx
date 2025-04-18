@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
+import paste from "../assets/Images/paste.png"
 
 import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
@@ -20,6 +21,13 @@ const projects = [
     description: "Decentralised Drop Servicing Platform.",
     image: orbitus,
     url: "https://devfolio.co/projects/orbitus-d287",
+  },
+  {
+    id: 3,
+    title: "Paste Application",
+    description: "Save your notes , code , Information .",
+    image: paste,
+    url: "https://github.com/rachitdhaka/Paste-Application",
   },
 ];
 
@@ -57,8 +65,9 @@ const V1 = () => {
               - A Podcast Platform for Voices That Matter
             </p>
 
-            <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl  ">
-              <NavLink to="/about" >More Information</NavLink>
+            <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300">
+              <NavLink to="/about" 
+               >More Information</NavLink>
             </button>
           </section>
 

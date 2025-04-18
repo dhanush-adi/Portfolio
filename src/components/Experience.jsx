@@ -19,13 +19,13 @@ const Experience = ( {logo, name , position , sd , ed }) => {
                 {name}
             </div>
             {/* position */}
-            <div className='font-saans mb-4'>
+            <div className='font-saans mb-4 text-neutral-600'>
                 {/* Core Member - Head of Operations */}
                 {position}
             </div>
 
-            <div className='flex flex-row '>
-              <div className='px-2 font-saans'>{sd}</div>
+            <div className='flex flex-row text-neutral-400'>
+              <div className='px-2 pl-0 font-saans'>{sd}</div>
               -
               <div className='px-2 font-saans'>{ed}</div>
             </div>

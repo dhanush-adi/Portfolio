@@ -3,6 +3,7 @@ import Experience from "./Experience";
 import gfg from '../assets/Images/gfglogo.png'
 import vp from '../assets/Images/VARTAA.png'
 import ck from '../assets/Images/download.jpeg'
+import FooterV1 from "./FooterV1";
 
 
 const experience = [
@@ -97,6 +98,18 @@ const About = () => {
               />
             ))}
         </div>
+
+        {/* resume section */}
+        <div className="p-4 font-maga text-neutral-500">
+          <a href="">
+            Download Resume 
+          </a>
+        </div>
+
+        {/* line  */}
+        <hr className="border-gray-200 my-1 mb-6" />
+
+        <FooterV1/>
       </div>
     </div>
   );
