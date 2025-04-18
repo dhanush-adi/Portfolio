@@ -27,7 +27,7 @@ const projects = [
     title: "Paste Application",
     description: "Save your notes , code , Information .",
     image: paste,
-    url: "https://github.com/rachitdhaka/Paste-Application",
+    url: "https://paste-saving.vercel.app",
   },
 ];
 
