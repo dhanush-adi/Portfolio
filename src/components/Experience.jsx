@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from "../assets/Images/gfglogo.png"
 
-const Experience = () => {
+const Experience = ( {logo, name , position , sd , ed }) => {
   return (
-    <div className=' flex flex-row  p-4'>
+    <div>
+      <div className=' flex flex-row  p-4'>
         {/* left side */}
         <div className='max-w-[20%] p-2 '>
            <img src={logo} alt="" className='rounded-xl shadow-sm' />
@@ -14,14 +15,27 @@ const Experience = () => {
         <div className='p-5 max-w-[80%] flex flex-col  '>
             {/* company */}
             <div className='font-bold text-xl font-saans'>
-                GeekForGeeks Student Chapter
+                {/* GeekForGeeks Student Chapter */}
+                {name}
             </div>
             {/* position */}
-            <div className='font-saans'>
-                Core Member - Head of Operations
+            <div className='font-saans mb-4'>
+                {/* Core Member - Head of Operations */}
+                {position}
+            </div>
+
+            <div className='flex flex-row '>
+              <div className='px-2 font-saans'>{sd}</div>
+              -
+              <div className='px-2 font-saans'>{ed}</div>
             </div>
         </div>
 
+      
+
+
+    </div>
+    <hr className="border-gray-200 my-1" />
     </div>
   )
 }

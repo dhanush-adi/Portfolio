@@ -1,5 +1,36 @@
 import React from "react";
 import Experience from "./Experience";
+import gfg from '../assets/Images/gfglogo.png'
+import vp from '../assets/Images/VARTAA.png'
+import ck from '../assets/Images/download.jpeg'
+
+
+const experience = [
+  {
+    id: 1,
+    name: "GeeksForGeeks SRM RMP",
+    position : "Core Member - Head of Operations",
+    logo : gfg,
+    sd : "Aug 2024",
+    ed : "Apr 2025",
+  },
+  {
+    id: 2,
+    name: "Vartalaap Podcast",
+    position : "Co-Founder & Host",
+    logo : vp,
+    sd : "Dec 2023",
+    ed : "Mar 2024",
+  },
+  {
+    id: 3,
+    name: "Code Kraftors",
+    position : "Web3 Domain Member",
+    logo : ck ,
+    sd : "Nov 2022",
+    ed : "Jul 2024",
+  },
+];
 
 const About = () => {
   return (
@@ -53,7 +84,18 @@ const About = () => {
 
         {/* experience wala section */}
         <div>
-          <Experience />
+          {/* <Experience /> */}
+          {experience.map((experience) => (
+              <Experience
+                key={experience.id}
+                name={experience.name}
+                position={experience.position}
+                logo={experience.logo}
+                sd={experience.sd}
+                ed={experience.ed}
+                
+              />
+            ))}
         </div>
       </div>
     </div>
