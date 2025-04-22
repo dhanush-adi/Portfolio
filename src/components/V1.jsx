@@ -34,22 +34,23 @@ const projects = [
 const V1 = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
-      <div className="max-w-[40%] mx-auto  px-6 py-8">
+      {/* Hero section - make responsive with sm/md/lg breakpoints */}
+      <div className="w-full lg:max-w-[40%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
         <main>
-          <section className="mb-16">
-            <h1 className="font-maga text-4xl font-bold mb-2">
+          <section className="mb-12">
+            <h1 className="font-maga text-3xl sm:text-4xl font-bold mb-2">
               Hello, I'm Rachit.
             </h1>
-            <p className="text-xl font-saans text-gray-500 mb-8">
+            <p className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-8">
               Developer - Dsa - Designer
             </p>
 
-            <p className=" font-Saans text-[16px]  text-gray-700 mb-3 leading-relaxed">
+            <p className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
               3rd Year CSE Undergrad at SRM University | Web Developer | Problem
               Solver | Core Member -{" "}
               <a
                 href=" https://gfgsrmrmp.vercel.app/ "
-                className="font-bold font-maga  hover:text-2xl duration-300 underline"
+                className="font-bold font-maga hover:text-2xl duration-300 underline"
               >
                 {" "}
                 GeeksForGeeks SRM RMP{" "}
@@ -57,7 +58,7 @@ const V1 = () => {
               | Building
               <a
                 href=" https://vartalaappodcast.vercel.app/ "
-                className="font-bold font-maga  hover:text-2xl duration-300 underline"
+                className="font-bold font-maga hover:text-2xl duration-300 underline"
               >
                 {" "}
                 Vartalaap{" "}
@@ -66,8 +67,7 @@ const V1 = () => {
             </p>
 
             <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300">
-              <NavLink to="/about" 
-               >More Information</NavLink>
+              <NavLink to="/about">More Information</NavLink>
             </button>
           </section>
 
@@ -75,16 +75,17 @@ const V1 = () => {
         </main>
       </div>
 
-      <section className="pt-12 max-w-[60%] mx-auto  mb-10">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold  mb-2 ml-15 font-maga">
+      {/* Projects section - make grid responsive */}
+      <section className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 font-maga">
             Personal Projects
           </h2>
-          <p className=" mb-10 ml-15 font-saans">
+          <p className="mb-6 sm:mb-10 font-saans">
             Below is a selection of recent projects that I've worked on.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
