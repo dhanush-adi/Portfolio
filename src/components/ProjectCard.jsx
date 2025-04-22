@@ -46,10 +46,7 @@ const ProjectCard = ({ image, title, description, url }) => {
           {description}
         </p>
         
-        <div className="flex items-center text-xs sm:text-sm text-gray-500 font-saans">
-          <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
-          <span>Live Project</span>
-        </div>
+
       </div>
     </a>
   );
