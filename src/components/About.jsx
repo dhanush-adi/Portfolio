@@ -13,6 +13,7 @@ const experience = [
     logo: gfg,
     sd: "Aug 2024",
     ed: "Apr 2025",
+    time: "9 Months"
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const experience = [
     logo: vp,
     sd: "Dec 2023",
     ed: "Mar 2024",
+    time: "3 Months"
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const experience = [
     logo: ck,
     sd: "Nov 2022",
     ed: "Jul 2024",
+    time: "1 Year 9 Months"
   },
 ];
 
@@ -107,6 +110,7 @@ const About = () => {
               logo={experience.logo}
               sd={experience.sd}
               ed={experience.ed}
+              time={experience.time}
             />
           ))}
         </div>
