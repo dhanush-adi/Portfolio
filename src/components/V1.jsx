@@ -55,7 +55,7 @@ const V1 = () => {
 
             <p className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
               3rd Year CSE Undergrad at SRM University | Web Developer | Problem
-              Solver | Core Member -{" "}
+              Solver | Mentor -{" "}
               <a
                 href=" https://gfgsrmrmp.vercel.app/ "
                 className="font-bold font-maga hover:text-2xl duration-300 underline"
