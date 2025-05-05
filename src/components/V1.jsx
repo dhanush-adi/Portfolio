@@ -59,29 +59,51 @@ const V1 = () => {
             </p>
 
             <p className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
-              3rd Year CSE Undergrad at SRM University | Web Developer | Problem
-              Solver | Mentor -{" "}
+              {/* Computer Science Undergrad at{" "}
+              <span className="font-bold font-maga"> SRM University </span>{" "}
+              <br /> */}
+              <span className="font-bold font-maga text-xl">
+                Web Developer{" "}
+                <span className="font-saans font-extralight">&</span> Problem
+                Solver
+              </span>{" "}
+              <br />
+              Mentor -{" "}
               <a
-                href=" https://gfgsrmrmp.vercel.app/ "
+                href="https://gfgsrmrmp.vercel.app/"
                 className="font-bold font-maga hover:text-2xl duration-300 underline"
               >
-                {" "}
-                GeeksForGeeks SRM RMP{" "}
+                GeeksForGeeks SRM RMP
               </a>{" "}
               | Building
               <a
-                href=" https://vartalaappodcast.vercel.app/ "
+                href="https://vartalaappodcast.vercel.app/"
                 className="font-bold font-maga hover:text-2xl duration-300 underline"
               >
-                {" "}
-                Vartalaap{" "}
+                Vartalaap
               </a>
               - A Podcast Platform for Voices That Matter
             </p>
 
-            <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300">
-              <NavLink to="/about">More Information</NavLink>
-            </button>
+            <NavLink to="/about" >
+              <button className="bg-black text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300 flex items-center gap-2 cursor-pointer">
+                More Information
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </NavLink>
           </section>
 
           <hr className="border-gray-200 my-1" />
