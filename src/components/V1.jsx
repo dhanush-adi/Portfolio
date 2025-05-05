@@ -2,8 +2,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
-import paste from "../assets/Images/paste.png"
-import game from "../assets/Images/game.png"
+import paste from "../assets/Images/paste.png";
+import game from "../assets/Images/game.png";
 
 import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
@@ -36,7 +36,7 @@ const projects = [
     description: "Simple Game.",
     image: game,
     url: "https://tictactoe-rachit.vercel.app/",
-  }
+  },
 ];
 
 const V1 = () => {
@@ -49,8 +49,13 @@ const V1 = () => {
             <h1 className="font-maga text-3xl sm:text-4xl font-bold mb-2">
               Hello, I'm Rachit.
             </h1>
-            <p className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-8">
+            <p className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-2">
               Developer - Dsa - Designer
+            </p>
+
+            <p className=" text-[16px]  font-saans text-gray-500 mb-8 sm:mb-8 italic">
+              "Where there’s chai and a keyboard, you’ll find me building
+              something."
             </p>
 
             <p className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">

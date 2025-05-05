@@ -45,7 +45,7 @@ const FooterV0 = () => {
       </div>
 
       <div className="text-[10px] text-[#9b9b9b] flex justify-center mt-1">
-        Made with 💖 . Rachit Dhaka
+      Made with ❤️ by Rachit Dhaka
       </div>
     </div>
   );
