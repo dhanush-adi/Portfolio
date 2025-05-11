@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandX } from '@tabler/icons-react';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -46,7 +48,8 @@ const Navbar = () => {
                 href="https://github.com/rachitdhaka"
                 className="hover:underline font-saans"
               >
-                GitHub
+                <IconBrandGithub stroke={1} />
+               
               </a>
             </li>
             <li>
@@ -54,7 +57,7 @@ const Navbar = () => {
                 href="https://x.com/rachitdhaka_"
                 className="hover:underline font-saans"
               >
-                Twitter
+                <IconBrandX stroke={2} />
               </a>
             </li>
             <li>

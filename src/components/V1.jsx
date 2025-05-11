@@ -110,12 +110,14 @@ const V1 = () => {
         </main>
       </div>
 
-      {/* Projects section - make grid responsive */}
+      {/* Projects section - making grid responsive */}
       <section className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4">
         <div className="container mx-auto">
+
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 font-maga">
-            Personal Projects
+            Personal Projects 
           </h2>
+
           <p className="mb-6 sm:mb-10 font-saans">
             Below is a selection of recent projects that I've worked on.
           </p>
@@ -131,10 +133,13 @@ const V1 = () => {
               />
             ))}
           </div>
+
         </div>
+
       </section>
 
       <FooterV1 />
+      
     </div>
   );
 };
