@@ -133,13 +133,9 @@ const V1 = () => {
               />
             ))}
           </div>
-
         </div>
-
       </section>
-
       <FooterV1 />
-      
     </div>
   );
 };
