@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { IconBrandGithub } from '@tabler/icons-react';
 import { IconBrandX } from '@tabler/icons-react';
+import { IconBrandLinkedin } from '@tabler/icons-react';
+import { IconCode } from '@tabler/icons-react';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -42,7 +44,7 @@ const Navbar = () => {
 
         {/* Desktop navigation */}
         <nav className="hidden md:block">
-          <ul className="flex space-x-6 text-[12px] sm:text-[14px]">
+          <ul className="flex space-x-4 text-[12px] sm:text-[14px]">
             <li>
               <a
                 href="https://github.com/rachitdhaka"
@@ -57,7 +59,7 @@ const Navbar = () => {
                 href="https://x.com/rachitdhaka_"
                 className="hover:underline font-saans"
               >
-                <IconBrandX stroke={2} />
+                <IconBrandX stroke={1} />
               </a>
             </li>
             <li>
@@ -65,7 +67,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/rachitdhaka/"
                 className="hover:underline font-saans"
               >
-                LinkedIn
+                <IconBrandLinkedin stroke={1} />
               </a>
             </li>
             <li>
@@ -73,7 +75,7 @@ const Navbar = () => {
                 href="https://codolio.com/profile/rachitdhaka"
                 className="hover:underline font-saans"
               >
-                Coding
+                <IconCode stroke={1} />
               </a>
             </li>
           </ul>
