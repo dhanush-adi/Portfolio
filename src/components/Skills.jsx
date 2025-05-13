@@ -13,6 +13,12 @@ const skills = [
   "git",
   "github",
   "vscode",
+  "c",
+  "vite",
+  "vercel",
+  "mysql",
+
+
 
   
 ];
@@ -32,7 +38,7 @@ const Skills = () => {
               key={index}
               src={`https://skillicons.dev/icons?i=${skill}`}
               alt={skill}
-              className="w-15 h-15"
+              className="w-13 h-13"
               loading="lazy"
 
               
