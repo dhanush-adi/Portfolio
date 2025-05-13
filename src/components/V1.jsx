@@ -7,6 +7,7 @@ import game from "../assets/Images/game.png";
 
 import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
+import Skills from "./Skills";
 
 const projects = [
   {
@@ -43,7 +44,7 @@ const V1 = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Hero section - make responsive with sm/md/lg breakpoints */}
-      <div className="w-full lg:max-w-[40%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
+      <div className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
         <main>
           <section className="mb-12">
             <h1 className="font-maga text-3xl sm:text-4xl font-bold mb-2">
@@ -122,6 +123,8 @@ const V1 = () => {
             Below is a selection of recent projects that I've worked on.
           </p>
 
+          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
             {projects.map((project) => (
               <ProjectCard
@@ -135,6 +138,14 @@ const V1 = () => {
           </div>
         </div>
       </section>
+
+      
+      {/* Skill Section */}
+      <Skills/>
+      
+
+
+      {/* footer section component */}
       <FooterV1 />
     </div>
   );

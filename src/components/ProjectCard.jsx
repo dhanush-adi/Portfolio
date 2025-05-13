@@ -22,7 +22,7 @@ const ProjectCard = ({ image, title, description, url }) => {
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <span className="bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium tracking-wide">
             View Project
-          </span>
+          </span> 
         </div>
       </div>
       
