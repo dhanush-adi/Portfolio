@@ -8,6 +8,7 @@ import game from "../assets/Images/game.png";
 import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
 import Skills from "./Skills";
+import GithubCalendar from "./GithubCalendar";
 
 const projects = [
   {
@@ -110,6 +111,10 @@ const V1 = () => {
           <hr className="border-gray-200 my-1" />
         </main>
       </div>
+
+
+      {/* Github calendar */}
+      <GithubCalendar/>
 
       {/* Projects section - making grid responsive */}
       <section className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4">
