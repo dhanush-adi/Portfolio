@@ -34,12 +34,13 @@ function GithubCalendar() {
       <div className="flex justify-center mt-5">
         <a
           href="https://github.com/rachitdhaka"
-          className="font-saans flex gap-3"
+          target="_blank"
+          rel="noopener noreferrer" 
         >
-          <button className="">
+          <div className="font-saans flex gap-3">
             <p>Github</p>
-          <IconBrandGithub stroke={1} />
-          </button>
+            <IconBrandGithub stroke={1} />
+          </div>
         </a>
       </div>
     </section>
