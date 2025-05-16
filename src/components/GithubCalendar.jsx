@@ -36,7 +36,10 @@ function GithubCalendar() {
           href="https://github.com/rachitdhaka"
           className="font-saans flex gap-3"
         >
-          
+          <button className="">
+            <p>Github</p>
+          <IconBrandGithub stroke={1} />
+          </button>
         </a>
       </div>
     </section>
