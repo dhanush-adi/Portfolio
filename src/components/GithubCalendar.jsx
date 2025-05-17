@@ -11,10 +11,27 @@ function GithubCalendar() {
         .map((el) => el.count)
         .reduce((acc, curr) => acc + curr, 0);
       setTotalCount(total);
-    }, 0);
+    },0);
 
     return contributions.slice(91, 365);
   }, []);
+
+const theme = {
+  light: [
+    "#ebedf0",  // Level 0 - light gray
+    "#a8f0a2",  // Level 1 - bright pastel green
+    "#70e97c",  // Level 2 - minty green
+    "#42cc61",  // Level 3 - rich green
+    "#21b94a"   // Level 4 - vibrant dark green
+  ],
+  dark: [
+    "#ebedf0",  // Level 0 - dark background gray
+    "#56f29c",  // Level 1
+    "#2ae98a",  // Level 2
+    "#00e676",  // Level 3
+    "#00c853"   // Level 4
+  ]
+};
 
   return (
     <section className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
@@ -27,6 +44,7 @@ function GithubCalendar() {
             username="rachitdhaka"
             transformData={processContributions}
             totalCount={totalCount}
+            theme={theme}
           />
         </div>
       </div>
@@ -35,7 +53,7 @@ function GithubCalendar() {
         <a
           href="https://github.com/rachitdhaka"
           target="_blank"
-          rel="noopener noreferrer" 
+          rel="noopener noreferrer"
         >
           <div className="font-saans flex gap-3">
             <p>Github</p>
