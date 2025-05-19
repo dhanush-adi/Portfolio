@@ -55,7 +55,7 @@ const theme = {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="font-saans flex gap-3">
+          <div className="font-saans flex gap-3 hover:scale-110 duration-300">
             <p>Github</p>
             <IconBrandGithub stroke={1} />
           </div>
