@@ -9,8 +9,7 @@ import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
 import Skills from "./Skills";
 import GithubCalendar from "./GithubCalendar";
-
-
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -43,44 +42,49 @@ const projects = [
   },
 ];
 
+// Animation variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+};
+
 const V1 = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* Hero section - make responsive with sm/md/lg breakpoints */}
-
-
-
+      {/* Hero section */}
       <div className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
-        <main>
-          <section className="mb-12">
-            <h1 className="font-maga text-3xl sm:text-4xl font-bold mb-2">
-              Hello, I'm {" "}
+        <motion.main variants={container} initial="hidden" animate="show">
+          <motion.section variants={item} className="mb-12">
+            <motion.h1 variants={item} className="font-maga text-3xl sm:text-4xl font-bold mb-2">
+              Hello, I'm{" "}
               <span className="hover:text-amber-600 ease-in duration-300">
-                Rachit 
+                Rachit
               </span>
-            </h1>
-            <p className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-2">
+            </motion.h1>
+
+            <motion.p variants={item} className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-2">
               Developer - Dsa - Designer
-            </p>
+            </motion.p>
 
-            <p className=" text-[16px]  font-saans text-gray-500 mb-8 sm:mb-8 italic">
-              "Where there’s {" "}
-              <span className="text-amber-600 ">
-                Chai 
-              </span> {" "}
-              and a 
-              {" "}
-              <span className="text-blue-600 ">
-                Keyboard 
-              </span> {" "}
-              , you’ll find me building
-              something."
-            </p>
+            <motion.p variants={item} className="text-[16px] font-saans text-gray-500 mb-8 sm:mb-8 italic">
+              "Where there’s{" "}
+              <span className="text-amber-600">Chai</span> and a{" "}
+              <span className="text-blue-600">Keyboard</span>, you’ll find me
+              building something."
+            </motion.p>
 
-            <p className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
-              {/* Computer Science Undergrad at{" "}
-              <span className="font-bold font-maga"> SRM University </span>{" "}
-              <br /> */}
+            <motion.p variants={item} className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
               <span className="font-bold font-maga text-xl">
                 Web Developer{" "}
                 <span className="font-saans font-extralight">&</span> Problem
@@ -94,18 +98,21 @@ const V1 = () => {
               >
                 GeeksForGeeks SRM RMP
               </a>{" "}
-              | Building {" "}
+              | Building{" "}
               <a
                 href="https://vartalaappodcast.vercel.app/"
                 className="font-bold font-maga hover:text-2xl duration-300 underline hover:text-red-500"
               >
                 Vartalaap
-              </a> 
+              </a>{" "}
               - A Podcast Platform for Voices That Matter
-            </p>
+            </motion.p>
 
-            <NavLink to="/about" >
-              <button className="bg-neutral-700 text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300 flex items-center gap-2 cursor-pointer hover:bg-neutral-950">
+            <NavLink to="/about">
+              <motion.button
+                variants={item}
+                className="bg-neutral-700 text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300 flex items-center gap-2 cursor-pointer hover:bg-neutral-950"
+              >
                 More Information
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,56 +128,52 @@ const V1 = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </button>
+              </motion.button>
             </NavLink>
-          </section>
-
-          <hr className="border-gray-200 my-1" />
-        </main>
+          </motion.section>
+        </motion.main>
+        <hr className="border-gray-200 my-1" />
       </div>
 
-
       {/* Github calendar */}
-      <GithubCalendar/>
+      <GithubCalendar />
 
-      {/* Projects section - making grid responsive */}
-      <section className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4">
+      {/* Projects section */}
+      <motion.section
+        className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="container mx-auto">
+          <motion.h2 variants={item} className="text-2xl sm:text-3xl font-bold mb-2 font-maga">
+            Personal Projects
+          </motion.h2>
 
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2 font-maga">
-            Personal Projects 
-          </h2>
-
-          <p className="mb-6 sm:mb-10 font-saans">
+          <motion.p variants={item} className="mb-6 sm:mb-10 font-saans">
             Below is a selection of recent projects that I've worked on.
-          </p>
+          </motion.p>
 
-          
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+          <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
             {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                url={project.url}
-              />
+              <motion.div key={project.id} variants={item}>
+                <ProjectCard
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  url={project.url}
+                />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      
-      {/* Skill Section */}
-      <Skills/>
+      {/* Skills section */}
+      <Skills />
 
-
-      
-      
-
-
-      {/* footer section component */}
+      {/* Footer */}
       <FooterV1 />
     </div>
   );
