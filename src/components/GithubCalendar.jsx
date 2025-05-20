@@ -59,7 +59,7 @@ function GithubCalendar() {
           variants={itemVariants}
           className="text-2xl sm:text-3xl font-bold mb-2 font-maga pb-4"
         >
-          GitHub Contribution Calendar
+          GitHub Contributions 
         </motion.h4>
 
         <motion.div
