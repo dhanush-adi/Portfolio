@@ -11,7 +11,7 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.2, 
+      staggerChildren: 0.1,
     },
   },
 };
@@ -27,7 +27,8 @@ const Skills = () => {
       className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4"
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
     >
       <hr className="border-gray-200 my-1 mb-8" />
       <h2 className="text-2xl sm:text-3xl font-bold mb-2 font-maga mb-8">
