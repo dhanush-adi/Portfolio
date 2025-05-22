@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { IconBrandGithub } from '@tabler/icons-react';
-import { IconBrandX } from '@tabler/icons-react';
-import { IconBrandLinkedin } from '@tabler/icons-react';
-import { IconCode } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandX, IconBrandLinkedin, IconCode } from '@tabler/icons-react';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full mx-auto py-4 sm:py-6 lg:py-8 bg-slate-50">
-      <header className="flex justify-between items-center w-full px-4 sm:px-6 md:max-w-[80%] lg:max-w-[60%] xl:max-w-[40%] mx-auto">
+      <header className="flex justify-between items-center w-full px-4 sm:px-6 md:max-w-[60%] lg:max-w-[60%] sm:max-w-[80%] mx-auto">
         <div>
           <NavLink to="/" className="text-[12px] sm:text-[14px] font-medium font-saans">
             rd
@@ -22,16 +19,16 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu button */}
-        <button 
-          className="md:hidden focus:outline-none" 
+        <button
+          className="md:hidden focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          <svg 
-            className="w-6 h-6" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24" 
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             {isMenuOpen ? (
@@ -46,35 +43,22 @@ const Navbar = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-4 text-[12px] sm:text-[14px]">
             <li>
-              <a
-                href="https://github.com/rachitdhaka"
-                className="hover:underline font-saans"
-              >
+              <a href="https://github.com/rachitdhaka" className="hover:underline font-saans">
                 <IconBrandGithub stroke={1} />
-               
               </a>
             </li>
             <li>
-              <a
-                href="https://x.com/rachitdhaka_"
-                className="hover:underline font-saans"
-              >
+              <a href="https://x.com/rachitdhaka_" className="hover:underline font-saans">
                 <IconBrandX stroke={1} />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/rachitdhaka/"
-                className="hover:underline font-saans"
-              >
+              <a href="https://www.linkedin.com/in/rachitdhaka/" className="hover:underline font-saans">
                 <IconBrandLinkedin stroke={1} />
               </a>
             </li>
             <li>
-              <a
-                href="https://codolio.com/profile/rachitdhaka"
-                className="hover:underline font-saans"
-              >
+              <a href="https://codolio.com/profile/rachitdhaka" className="hover:underline font-saans">
                 <IconCode stroke={1} />
               </a>
             </li>
@@ -88,34 +72,22 @@ const Navbar = () => {
           <nav>
             <ul className="flex flex-col space-y-3 text-[14px]">
               <li>
-                <a
-                  href="https://github.com/rachitdhaka"
-                  className="block py-2 hover:underline font-saans"
-                >
+                <a href="https://github.com/rachitdhaka" className="block py-2 hover:underline font-saans">
                   GitHub
                 </a>
               </li>
               <li>
-                <a
-                  href="https://x.com/rachitdhaka_"
-                  className="block py-2 hover:underline font-saans"
-                >
+                <a href="https://x.com/rachitdhaka_" className="block py-2 hover:underline font-saans">
                   Twitter
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/rachitdhaka/"
-                  className="block py-2 hover:underline font-saans"
-                >
+                <a href="https://www.linkedin.com/in/rachitdhaka/" className="block py-2 hover:underline font-saans">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a
-                  href="https://codolio.com/profile/rachitdhaka"
-                  className="block py-2 hover:underline font-saans"
-                >
+                <a href="https://codolio.com/profile/rachitdhaka" className="block py-2 hover:underline font-saans">
                   Coding
                 </a>
               </li>
