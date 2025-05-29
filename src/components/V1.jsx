@@ -24,7 +24,7 @@ const projects = [
     title: "OrbitUs",
     description: "Decentralised Drop Servicing Platform.",
     image: orbitus,
-    url: "https://devfolio.co/projects/orbitus-d287",
+    url: "https://orbitus.vercel.app/",
   },
   {
     id: 3,
