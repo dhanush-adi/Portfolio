@@ -39,8 +39,8 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className=" mx-auto flex justify-center items-center h-screen max-w-4xl  ">
-      <div className="grid grid-cols-2 gap-5 ">
+    <div className="mx-auto flex justify-center items-center min-h-screen max-w-6xl px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
         {projects.map((projects, idx) => (
           <motion.div
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -51,22 +51,22 @@ const ProjectCard = () => {
               ease: "easeInOut",
             }}
             key={projects.id}
-            className="mx-5"
+            className="mx-1"
           >
             <a href={projects.url}>
-              <div className="hover:scale-[1.02] duration-200 ">
+              <div className="hover:scale-[1.02] duration-200">
                 <img
-                src={projects.image}
-                height={300}
-                width={300}
-                className="rounded-3xl h-54 w-full  shadow-md hover:shadow-neutral-300 cursor-pointer "
-              />
-              <p className="font-medium text-neutral-800 tracking-tight pt-3 ">
-                {projects.title}
-              </p>
-              <p className="font-medium text-neutral-500 tracking-tight ">
-                {projects.description}
-              </p>
+                  src={projects.image}
+                  height={300}
+                  width={300}
+                  className="rounded-3xl h-54 w-full shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
+                />
+                <p className="font-medium text-neutral-800 tracking-tight pt-3">
+                  {projects.title}
+                </p>
+                <p className="font-medium text-neutral-500 tracking-tight">
+                  {projects.description}
+                </p>
               </div>
             </a>
           </motion.div>
