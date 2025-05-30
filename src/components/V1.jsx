@@ -140,11 +140,17 @@ const V1 = () => {
         <hr className="border-gray-200 my-1" />
       </div>
 
+      {/* Projects section */}
+      <ProjectCard/>
+
+<hr className="border-gray-200 my-1 mb-8 w-[60%] mx-auto " />
+
       {/* Github calendar */}
       <GithubCalendar />
 
-      {/* Projects section */}
-      <ProjectCard/>
+      
+
+      
 
       {/* Skills section */}
       <Skills />

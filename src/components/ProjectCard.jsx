@@ -5,6 +5,7 @@ import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import { motion } from "motion/react";
+import { div, section } from "motion/react-client";
 
 const projects = [
   {
@@ -39,7 +40,15 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className="mx-auto flex justify-center items-center min-h-screen max-w-6xl px-4 " >
+    <div className="mx-auto flex flex-col  items-center min-h-screen max-w-[60%] px-4   ">
+      <h2 className="text-2xl sm:text-3xl font-bold font-maga  self-start">
+        Projects
+      </h2>
+
+      <p className=" lg:text-md sm:text-md   font-saans pb-4 self-start">
+          Below is a selection of recent projects that I've worked on.
+      </p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 ">
         {projects.map((projects, idx) => (
           <motion.div
