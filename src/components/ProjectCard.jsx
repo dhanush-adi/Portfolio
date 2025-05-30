@@ -39,8 +39,8 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className="mx-auto flex justify-center items-center min-h-screen max-w-6xl px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
+    <div className="mx-auto flex justify-center items-center min-h-screen max-w-6xl px-4 " >
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 ">
         {projects.map((projects, idx) => (
           <motion.div
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -59,7 +59,7 @@ const ProjectCard = () => {
                   src={projects.image}
                   height={300}
                   width={300}
-                  className="rounded-3xl h-54 w-full shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
+                  className="rounded-3xl h-72 w-md shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
                 />
                 <p className="font-medium text-neutral-800 tracking-tight pt-3">
                   {projects.title}
