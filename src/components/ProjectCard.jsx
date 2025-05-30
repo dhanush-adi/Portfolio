@@ -40,16 +40,16 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className="mx-auto flex flex-col  items-center min-h-screen max-w-[60%] px-4 pb-8   ">
-      <h2 className="text-2xl sm:text-3xl font-bold font-maga  self-start">
+    <div className="mx-auto flex flex-col items-center min-h-screen w-full sm:max-w-[60%] px-4 pb-8">
+      <h2 className="text-2xl sm:text-3xl font-bold font-maga self-start">
         Projects
       </h2>
 
-      <p className=" lg:text-md sm:text-md   font-saans pb-4 self-start">
-          Below is a selection of recent projects that I've worked on.
-      </p>
+      <p className="text-sm sm:text-base font-saans pb-4 self-start">
+  Below is a selection of recent projects that I've worked on.
+</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {projects.map((projects, idx) => (
           <motion.div
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -60,20 +60,19 @@ const ProjectCard = () => {
               ease: "easeInOut",
             }}
             key={projects.id}
-            className="mx-1"
+            className="mx-1 w-full"
           >
-            <a href={projects.url}>
+            <a href={projects.url} target="_blank" rel="noopener noreferrer">
               <div className="hover:scale-[1.02] duration-200">
                 <img
                   src={projects.image}
-                  height={300}
-                  width={300}
-                  className="rounded-3xl h-72 w-md shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
+                  alt={projects.title}
+                  className="rounded-3xl w-full h-64 sm:h-72 shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
                 />
-                <p className="font-medium text-neutral-800 tracking-tight pt-3 text-2xl font-saans">
+                <p className="font-medium text-neutral-800 tracking-tight pt-3 text-xl sm:text-2xl font-saans">
                   {projects.title}
                 </p>
-                <p className="font-maga font-medium text-neutral-500 tracking-tight">
+                <p className="font-maga font-medium text-neutral-500 tracking-tight text-sm sm:text-base">
                   {projects.description}
                 </p>
               </div>
