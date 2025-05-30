@@ -143,7 +143,7 @@ const V1 = () => {
       {/* Projects section */}
       <ProjectCard/>
 
-<hr className="border-gray-200 my-1 mb-8 w-[60%] mx-auto " />
+<hr className="border-gray-200 my-1  w-[60%] mx-auto " />
 
       {/* Github calendar */}
       <GithubCalendar />

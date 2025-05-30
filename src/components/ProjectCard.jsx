@@ -40,7 +40,7 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className="mx-auto flex flex-col  items-center min-h-screen max-w-[60%] px-4   ">
+    <div className="mx-auto flex flex-col  items-center min-h-screen max-w-[60%] px-4 pb-8   ">
       <h2 className="text-2xl sm:text-3xl font-bold font-maga  self-start">
         Projects
       </h2>
