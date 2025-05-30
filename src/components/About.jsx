@@ -4,6 +4,7 @@ import gfg from "../assets/Images/gfglogo.png";
 import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import FooterV1 from "./FooterV1";
+import { motion } from "motion/react";
 
 const experience = [
   {
@@ -100,7 +101,12 @@ const About = () => {
         <div className="font-maga text-2xl sm:text-3xl py-4 font-bold">Experience</div>
 
         {/* experience wala section */}
-        <div>
+        <motion.div initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}>
           {/* <Experience /> */}
           {experience.map((experience) => (
             <Experience
@@ -113,7 +119,7 @@ const About = () => {
               time={experience.time}
             />
           ))}
-        </div>
+        </motion.div>
 
         {/* resume section */}
         <div className="p-4 font-maga text-neutral-500">
