@@ -64,7 +64,12 @@ const V1 = () => {
     <div className="bg-slate-50 min-h-screen">
       {/* Hero section */}
       <div className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
-        <motion.main variants={container} initial="hidden" animate="show">
+        <motion.main initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}>
           <motion.section variants={item} className="mb-12">
             <motion.h1 variants={item} className="font-maga text-3xl sm:text-4xl font-bold mb-2">
               Hello, I'm{" "}
@@ -139,36 +144,7 @@ const V1 = () => {
       <GithubCalendar />
 
       {/* Projects section */}
-      <motion.section
-        className="pt-8 sm:pt-12 w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto mb-10 px-4"
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
-        <div className="container mx-auto">
-          <motion.h2 variants={item} className="text-2xl sm:text-3xl font-bold mb-2 font-maga">
-            Personal Projects
-          </motion.h2>
-
-          <motion.p variants={item} className="mb-6 sm:mb-10 font-saans">
-            Below is a selection of recent projects that I've worked on.
-          </motion.p>
-
-          <motion.div variants={container} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
-            {projects.map((project) => (
-              <motion.div key={project.id} variants={item}>
-                <ProjectCard
-                  image={project.image}
-                  title={project.title}
-                  description={project.description}
-                  url={project.url}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.section>
+      <ProjectCard/>
 
       {/* Skills section */}
       <Skills />

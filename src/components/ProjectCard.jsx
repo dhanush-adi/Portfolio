@@ -1,54 +1,78 @@
 import React from "react";
 
-const ProjectCard = ({ image, title, description, url }) => {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block rounded-xl shadow-md bg-neutral-100 hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 group p-2 sm:p-4 border border-transparent hover:border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
-      aria-label={`View project: ${title}`}
-    >
-      <div className="relative overflow-hidden rounded-xl">
-        <img
-          src={image}
-          alt={`${title} project screenshot`}
-          className="w-full h-40 sm:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
-        {/* View project overlay */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span className="bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium tracking-wide">
-            View Project
-          </span> 
-        </div>
-      </div>
-      
-      <div className="p-3 sm:p-6">
-        <div className="flex justify-between items-center mb-2">
-          <h4 className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 font-maga">
-            {title}
-          </h4>
-          <svg 
-            className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transform group-hover:translate-x-1 transition-all" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </div>
-        
-        <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 font-saans">
-          {description}
-        </p>
-        
+import ethlinkImg from "../assets/Images/image.png";
+import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
+import paste from "../assets/Images/paste.png";
+import game from "../assets/Images/game.png";
+import { motion } from "motion/react";
 
+const projects = [
+  {
+    id: 1,
+    title: "Eth Link",
+    description: "Decentralised Job Searching Platform",
+    image: ethlinkImg,
+    url: "https://eth-link-vcpn.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "OrbitUs",
+    description: "Decentralised Drop Servicing Platform.",
+    image: orbitus,
+    url: "https://orbitus.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Paste Application",
+    description: "Save your notes , code , Information .",
+    image: paste,
+    url: "https://paste-saving.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Tic Tac Toe",
+    description: "Simple Game.",
+    image: game,
+    url: "https://tictactoe-rachit.vercel.app/",
+  },
+];
+
+const ProjectCard = () => {
+  return (
+    <div className=" mx-auto flex justify-center items-center h-screen max-w-4xl  ">
+      <div className="grid grid-cols-2 gap-5 ">
+        {projects.map((projects, idx) => (
+          <motion.div
+            initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            transition={{
+              duration: 0.3,
+              delay: idx * 0.1,
+              ease: "easeInOut",
+            }}
+            key={projects.id}
+            className="mx-5"
+          >
+            <a href={projects.url}>
+              <div className="hover:scale-[1.02] duration-200 ">
+                <img
+                src={projects.image}
+                height={300}
+                width={300}
+                className="rounded-3xl h-54 w-full  shadow-md hover:shadow-neutral-300 cursor-pointer "
+              />
+              <p className="font-medium text-neutral-800 tracking-tight pt-3 ">
+                {projects.title}
+              </p>
+              <p className="font-medium text-neutral-500 tracking-tight ">
+                {projects.description}
+              </p>
+              </div>
+            </a>
+          </motion.div>
+        ))}
       </div>
-    </a>
+    </div>
   );
 };
 
