@@ -61,10 +61,10 @@ const ProjectCard = () => {
                   width={300}
                   className="rounded-3xl h-72 w-md shadow-md hover:shadow-neutral-300 cursor-pointer object-cover"
                 />
-                <p className="font-medium text-neutral-800 tracking-tight pt-3">
+                <p className="font-medium text-neutral-800 tracking-tight pt-3 text-2xl font-saans">
                   {projects.title}
                 </p>
-                <p className="font-medium text-neutral-500 tracking-tight">
+                <p className="font-maga font-medium text-neutral-500 tracking-tight">
                   {projects.description}
                 </p>
               </div>
