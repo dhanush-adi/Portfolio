@@ -74,7 +74,7 @@ const V1 = () => {
             <motion.h1 variants={item} className="font-maga text-3xl sm:text-4xl font-bold mb-2">
               Hello, I'm{" "}
               <span className="hover:text-amber-600 ease-in duration-300">
-                Rachit
+                Rachit Dhaka
               </span>
             </motion.h1>
 
