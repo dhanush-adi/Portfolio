@@ -26,58 +26,34 @@ function GithubCalendar() {
       "#21b94a"   // Level 4 - vibrant dark green
     ],
     dark: [
-      "#ebedf0",  // Level 0 - dark background gray
-      "#56f29c",  // Level 1
-      "#2ae98a",  // Level 2
-      "#00e676",  // Level 3
-      "#00c853"   // Level 4
+      "#161b22",  // Level 0 - background gray
+      "#003d1f",  // Level 1
+      "#006d32",  // Level 2
+      "#26a641",  // Level 3
+      "#39d353"   // Level 4
     ]
   };
 
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <section className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.h4
-          variants={itemVariants}
-          className="text-2xl sm:text-3xl font-bold mb-2 font-maga pb-4"
-        >
-          GitHub Contributions 
-        </motion.h4>
+      
 
-        <motion.div
-          variants={itemVariants}
-          className="bg-white p-4 flex flex-col justify-self-center rounded-xl shadow-md"
-        >
-          <GitHubCalendar
-            username="rachitdhaka"
-            transformData={processContributions}
-            totalCount={totalCount}
-            theme={theme}
-          />
-        </motion.div>
+      
+      <h2 className="text-2xl sm:text-3xl font-bold font-maga mb-8">
+        Github Contribution 
+      </h2>
 
-        <motion.div
-          variants={itemVariants}
-          className="flex justify-center mt-5"
-        >
+      <div className='overflow-auto px-10 bg-black p-4 rounded-4xl text-white'>
+        <GitHubCalendar 
+          username="rachitdhaka"
+          colorScheme="dark"
+          theme={theme}
+        />
+        
+      </div>
+
+      <motion.div className="mt-5 flex justify-center" >
           <a
             href="https://github.com/rachitdhaka"
             target="_blank"
@@ -89,7 +65,6 @@ function GithubCalendar() {
             </div>
           </a>
         </motion.div>
-      </motion.div>
     </section>
   );
 }
