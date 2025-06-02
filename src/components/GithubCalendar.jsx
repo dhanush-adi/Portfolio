@@ -55,7 +55,7 @@ function GithubCalendar() {
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{
               duration: 0.3,
-              delay: 0.2,
+              delay: 0.1,
               ease: "easeInOut",
             }}
       >
