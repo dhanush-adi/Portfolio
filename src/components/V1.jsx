@@ -4,6 +4,7 @@ import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
+import dp from "../assets/Images/Orginal.jpg"
 
 import FooterV1 from "./FooterV1";
 import { NavLink } from "react-router-dom";
@@ -49,14 +50,14 @@ const container = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.2
-    }
-  }
+      delayChildren: 0.2,
+    },
+  },
 };
 
 const item = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 }
+  show: { opacity: 1, y: 0 },
 };
 
 const V1 = () => {
@@ -64,32 +65,54 @@ const V1 = () => {
     <div className="bg-slate-50 min-h-screen">
       {/* Hero section */}
       <div className="w-full lg:max-w-[60%] md:max-w-[60%] sm:max-w-[80%] px-4 sm:px-6 py-8 mx-auto">
-        <motion.main initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
-            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-            transition={{
-              duration: 0.3,
-              ease: "easeInOut",
-            }}>
+        <motion.main
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
           <motion.section variants={item} className="mb-12">
-            <motion.h1 variants={item} className="font-maga text-3xl sm:text-4xl font-bold mb-2">
-              Hello, I'm{" "}
-              <span className="hover:text-amber-600 ease-in duration-300">
-                Rachit Dhaka
-              </span>
-            </motion.h1>
+            <div className="flex">
+              <div className="w-[80%]">
+                <motion.h1
+                  variants={item}
+                  className="font-maga text-3xl sm:text-4xl font-bold mb-2 "
+                >
+                  Hello, I'm{" "}
+                  <span className="hover:text-amber-600 ease-in duration-300">
+                    Rachit Dhaka
+                  </span>
+                </motion.h1>
 
-            <motion.p variants={item} className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-2">
-              Developer - Dsa - Designer
-            </motion.p>
+                <motion.p
+                  variants={item}
+                  className="text-lg sm:text-xl font-saans text-gray-500 mb-6 sm:mb-2"
+                >
+                  Developer - Dsa - Designer
+                </motion.p>
 
-            <motion.p variants={item} className="text-[16px] font-saans text-gray-500 mb-8 sm:mb-8 italic">
-              "Where there’s{" "}
-              <span className="text-amber-600">Chai</span> and a{" "}
-              <span className="text-blue-600">Keyboard</span>, you’ll find me
-              building something."
-            </motion.p>
+                <motion.p
+                  variants={item}
+                  className="text-[16px] font-saans text-gray-500 mb-8 sm:mb-8 italic"
+                >
+                  "Where there’s <span className="text-amber-600">Chai</span>{" "}
+                  and a <span className="text-blue-600">Keyboard</span>, you’ll
+                  find me building something."
+                </motion.p>
+              </div>
 
-            <motion.p variants={item} className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed">
+              {/* image div */}
+              <div className="w-[20%]  sm:w-[20%] flex justify-center items-center ">
+                <img src={dp} alt="Rachit Dhaka Image " className="rounded-full h-22 w-22   sm:h-32 sm:w-32" />
+              </div>
+            </div>
+
+            <motion.p
+              variants={item}
+              className="font-Saans text-[15px] sm:text-[16px] text-gray-700 mb-3 leading-relaxed"
+            >
               <span className="font-bold font-maga text-xl">
                 Web Developer{" "}
                 <span className="font-saans font-extralight">&</span> Problem
@@ -141,16 +164,12 @@ const V1 = () => {
       </div>
 
       {/* Projects section */}
-      <ProjectCard/>
+      <ProjectCard />
 
-<hr className="border-gray-200 my-1  w-[60%] mx-auto " />
+      <hr className="border-gray-200 my-1  w-[60%] mx-auto " />
 
       {/* Github calendar */}
       <GithubCalendar />
-
-      
-
-      
 
       {/* Skills section */}
       <Skills />
