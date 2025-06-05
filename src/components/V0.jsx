@@ -6,6 +6,7 @@ import V0exp from "./V0exp";
 import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import V0skills from "./V0skills";
+import V0projects from "./V0projects";
 
 const exp = [
   {
@@ -38,7 +39,7 @@ const V0 = () => {
   return (
     <div className="w-full bg-black min-h-screen">
       {/* main section   compact div pe kaam karna hai */} 
-      <div className="max-w-2xl mx-auto   h-screen bg-black ">
+      <div className="max-w-2xl mx-auto  bg-black ">
         {/* naming and intro */}
         <div className="flex p-8">
           {/* left side  */}
@@ -58,7 +59,7 @@ const V0 = () => {
           </div>
 
           {/* right side  */}
-          <div className="w-[30%]  flex justify-center items-center py-7">
+          <div className="w-[30%]  flex justify-end items-center py-7">
             <img src={dp} alt="" className="h-36 rounded-full aspect-square" />
           </div>
         </div>
@@ -93,9 +94,17 @@ const V0 = () => {
             />
           ))}
         </div>
+          
 
+        {/* skillls section */}
         <div>
           <V0skills/>
+        </div>
+
+
+        {/* Project sections  */}
+        <div>
+          <V0projects/>
         </div>
 
       </div>

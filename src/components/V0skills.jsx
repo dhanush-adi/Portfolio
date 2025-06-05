@@ -20,13 +20,13 @@ const skills = [
 
 const V0skills = () => {
   return (
-    <section className=" max-w-2xl h-screen ">
+    <section className=" max-w-2xl">
       <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
         Skills
       </h1>
 
       <div className="flex justify-center">
-        <div className="grid grid-cols-8 px-8 gap-1">
+        <div className="grid grid-cols-8 px-8 gap-2">
           {skills.map((skills,index)=>(
             <img
                 src={`https://skillicons.dev/icons?i=${skills}`}
