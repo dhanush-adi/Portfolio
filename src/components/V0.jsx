@@ -36,7 +36,7 @@ const exp = [
 
 const V0 = () => {
   return (
-    <div className=" w-full bg-black h-screen">
+    <div className="w-full bg-black min-h-screen">
       {/* main section   compact div pe kaam karna hai */} 
       <div className="max-w-2xl mx-auto   h-screen bg-black ">
         {/* naming and intro */}
