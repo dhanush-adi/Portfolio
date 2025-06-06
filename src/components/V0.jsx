@@ -6,7 +6,59 @@ import V0exp from "./V0exp";
 import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import V0skills from "./V0skills";
-import V0projects from "./V0projects";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconBrandLinkedin,
+  IconCode,
+} from "@tabler/icons-react";
+import V0projectCard from "./V0projectCard";
+import ethlinkImg from "../assets/Images/image.png";
+import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
+import paste from "../assets/Images/paste.png";
+import game from "../assets/Images/game.png";
+
+const projects = [
+  {
+    id: 1,
+    name: "Paste Application",
+    detail:
+      "Paste Application  - Save , edit , delete  your notes , code and information ",
+    logo: paste,
+    url: "https://paste-saving.vercel.app/",
+    techStack: ["React", "Tailwind", "Redux"],
+    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
+  },
+  {
+    id: 2,
+    name: "Orbit Us",
+    detail:
+      "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer ",
+    logo: orbitus,
+    url: "https://orbitus.vercel.app/",
+    techStack: ["React", "Tailwind", "Solidity", "Web3"],
+    githubUrl: "https://github.com/rachitdhaka/Drop-Service---Orbit-Us",
+  },
+  {
+    id: 3,
+    name: "Eth Link",
+    detail:
+      "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
+    logo: ethlinkImg,
+    url: "https://eth-link-vcpn.vercel.app/",
+    techStack: ["React", "Tailwind", "Solidity", "Web3"],
+    githubUrl: "https://github.com/rachitdhaka/EthLink",
+  },
+  {
+    id: 4,
+    name: "Tic Tac Toe",
+    detail: "Simple Game",
+    logo: game,
+    url: "https://tictactoe-rachit.vercel.app/",
+    techStack: ["React", "Tailwind"],
+    githubUrl: "https://github.com/rachitdhaka/Tic-Tac-Toe",
+  },
+];
 
 const exp = [
   {
@@ -38,7 +90,7 @@ const exp = [
 const V0 = () => {
   return (
     <div className="w-full bg-black min-h-screen">
-      {/* main section   compact div pe kaam karna hai */} 
+      {/* main section   compact div pe kaam karna hai */}
       <div className="max-w-2xl mx-auto  bg-black ">
         {/* naming and intro */}
         <div className="flex p-8">
@@ -68,12 +120,9 @@ const V0 = () => {
 
         <div className="px-8">
           <h1 className="text-white font-semibold text-xl">About</h1>
-          <p className="  text-neutral-400">
+          <p className="  text-neutral-400 tracking-tight">
             {" "}
-            An Engineering B.Tech CSE student (4th Year) who is passionate about
-            web development and design. Eager to learn, collaborate, and
-            contribute to innovative projects in the field. I code with a
-            designer's eye and design with a developer's mind.
+            A final-year B.Tech Computer Science Engineering student with a strong passion for web development and problem-solving through DSA. I bring a unique blend of creativity and logic , designing with a developer’s precision and coding with a designer’s vision. Constantly exploring new technologies, I enjoy building intuitive user experiences, solving complex problems, and contributing to impactful projects. Eager to collaborate, learn, and innovate in fast-paced tech environments.
           </p>
         </div>
 
@@ -94,22 +143,72 @@ const V0 = () => {
             />
           ))}
         </div>
-          
 
         {/* skillls section */}
         <div>
-          <V0skills/>
+          <V0skills />
         </div>
-
 
         {/* Project sections  */}
+
         <div>
-          <V0projects/>
+          <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
+            Projects
+          </h1>
+
+          <div className="flex justify-center">
+            <div className=" grid grid-cols-2 gap-3">
+              {projects.map((pr) => (
+                <V0projectCard
+                  key={pr.id}
+                  name={pr.name}
+                  logo={pr.logo}
+                  detail={pr.detail}
+                  url={pr.url}
+                  techStack={pr.techStack}
+                  githubUrl={pr.githubUrl}
+                />
+              ))}
+            </div>
+          </div>
         </div>
 
-      </div>
+        {/* Get in touch  */}
 
-      
+        <div className="flex justify-center items-center mt-10 flex-col">
+          <h1 className="text-white text-4xl font-bold">Get in Touch</h1>
+
+          <div className="flex gap-3 py-8 ">
+            <a
+              href="https://x.com/rachitdhaka_"
+              className="hover:underline font-saans"
+            >
+              <IconBrandX stroke={1}  color="white"/>
+            </a>
+
+            <a
+              href="https://github.com/rachitdhaka"
+              className="hover:underline font-saans "
+            >
+              <IconBrandGithub stroke={1}   color="white"/>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rachitdhaka/"
+              className="hover:underline font-saans"
+            >
+              <IconBrandLinkedin stroke={1}  color="white"/>
+            </a>
+
+            <a
+              href="https://codolio.com/profile/rachitdhaka"
+              className="hover:underline font-saans"
+            >
+              <IconCode stroke={1} color="white" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
