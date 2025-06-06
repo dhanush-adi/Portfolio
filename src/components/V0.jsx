@@ -18,6 +18,7 @@ import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const projects = [
   {
@@ -248,7 +249,7 @@ const V0 = () => {
           {/* Adjusted font size for responsiveness */}
           <h1 className="text-white text-3xl sm:text-4xl font-bold">Get in Touch</h1>
 
-          <div className="flex gap-3 py-8">
+          <div className="flex gap-3 pt-8">
             <a
               href="https://x.com/rachitdhaka_"
               className="hover:underline font-saans"
@@ -282,6 +283,15 @@ const V0 = () => {
             </a>
           </div>
         </motion.div>
+
+
+        <div className="text-[10px] text-white flex justify-center  mb-2 underline font-bold pb-10">
+           <NavLink to="/"
+        className= "duration-300"
+        >
+            Version 1
+        </NavLink>
+        </div>
       </div>
      
     </div>
