@@ -118,9 +118,21 @@ const V0 = () => {
           </div>
 
           {/* right side  */}
-          <div className="w-[30%]  flex justify-end items-center py-7">
-            <img src={dp} alt="" className="h-36 rounded-full aspect-square" />
-          </div>
+          <motion.div
+            className="w-[30%]  flex justify-end items-center py-7"
+            initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+          >
+            <img
+              src={dp}
+              alt=""
+              className="h-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
+            />
+          </motion.div>
         </div>
 
         {/* about section  */}

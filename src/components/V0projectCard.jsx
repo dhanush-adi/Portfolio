@@ -10,7 +10,7 @@ const V0projectCard = ({
 }) => {
   return (
     <section>
-      <div className="border border-neutral-400 rounded-xl flex flex-col w-80">
+      <div className="border border-neutral-700 rounded-xl flex flex-col w-80">
         {/* image div */}
         <div className="p-2">
           <img
