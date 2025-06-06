@@ -10,50 +10,47 @@ const V0projectCard = ({
 }) => {
   return (
     <section>
-      <div className="border border-neutral-700 rounded-xl flex flex-col w-80">
-        {/* image div */}
+      <div className="border border-neutral-700 rounded-xl flex flex-col w-full max-w-xs sm:max-w-sm mx-auto overflow-hidden">
         <div className="p-2">
           <img
             src={logo}
-            alt=""
-            width="400"
-            height="full"
-            className="h-40 rounded-xl"
+            alt={`Preview of ${name}`}
+            className="w-full h-32 sm:h-40 rounded-lg object-cover aspect-video"
           />
         </div>
 
-        {/* content of */}
         <div className="p-3">
-          <p className="text-white font-bold text-[16px]">{name}</p>
-          <p className="text-[12px]  text-neutral-300">{detail}</p>
+          <p className="text-white font-bold text-base sm:text-[16px] mb-1">
+            {name}
+          </p>
+          <p className="text-xs sm:text-[12px] text-neutral-300">
+            {detail}
+          </p>
         </div>
 
-        {/* tech stack used and github */}
-        <div className="px-3 pb-3 flex flex-wrap gap-2 flex-col ">
-          <div className=" flex gap-2">
+        <div className="px-3 pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div className="flex flex-wrap gap-2">
             {techStack.map((tech, index) => (
               <span
                 key={index}
-                className="bg-white text-black rounded px-1 py-0.5 font-semibold text-[11px] "
+                className="bg-white text-black rounded px-2 py-0.5 font-semibold text-[10px] sm:text-[11px]"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="flex  gap-2">
-            
-
-            <a href={url}>
-              <button className="bg-neutral-700 text-neutral-200 rounded px-1 py-0.5 font-semibold text-[11px] flex items-center cursor-pointer">
-                Live 
+          <div className="flex gap-2 mt-2 sm:mt-0">
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <button className="bg-neutral-700 text-neutral-200 rounded px-2 py-0.5 font-semibold text-[10px] sm:text-[11px] flex items-center justify-center cursor-pointer hover:bg-neutral-600 transition-colors">
+                Live
               </button>
             </a>
 
-            <a href={githubUrl}>
-                <button className="bg-neutral-700 text-neutral-200 rounded px-1 py-0.5 font-semibold text-[11px] flex items-center cursor-pointer"> 
-                    Github
-                </button>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <button className="bg-neutral-700 text-neutral-200 rounded px-2 py-0.5 font-semibold text-[10px] sm:text-[11px] flex items-center justify-center cursor-pointer hover:bg-neutral-600 transition-colors">
+                GitHub
+              </button>
             </a>
           </div>
         </div>

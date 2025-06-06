@@ -1,5 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/54ff549a54ee6bdf2fc828c0f8371da2?family=Schelter+Grotesk+NF+W01+Bold);
 
+
+
 @font-face {
     font-family: Maga;
     src: url("../src/assets/fonts/Fontspring-DEMO-magazinegrotesque-regular.otf");
@@ -14,6 +16,8 @@
     src: url(../src/assets/fonts/saans-font.woff2);
 }
 @import "tailwindcss";
+
+/*  */
 
 @theme{
     --font-maga:Maga , "sans-serif";

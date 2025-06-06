@@ -1,29 +1,29 @@
 import React from "react";
-import FooterV0 from "./FooterV0";
+import FooterV0 from "./FooterV0"; // Assuming FooterV0 is already responsive or will be made so
 import gfg from "../assets/Images/gfglogo.png";
 import dp from "../assets/Images/Orginal.jpg";
-import V0exp from "./V0exp";
+import V0exp from "./V0exp"; // Assuming V0exp handles its own responsiveness
 import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
-import V0skills from "./V0skills";
+import V0skills from "./V0skills"; // Assuming V0skills handles its own responsiveness
 import {
   IconBrandGithub,
   IconBrandX,
   IconBrandLinkedin,
   IconCode,
 } from "@tabler/icons-react";
-import V0projectCard from "./V0projectCard";
+import V0projectCard from "./V0projectCard"; // This component needs careful attention for responsiveness
 import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
+
 const projects = [
   {
     id: 1,
     name: "Paste Application",
-    detail:
-      "Paste Application  - Save , edit , delete  your notes , code and information ",
+    detail: "Paste Application - Save, edit, delete your notes, code and information",
     logo: paste,
     url: "https://paste-saving.vercel.app/",
     techStack: ["React", "Tailwind", "Redux"],
@@ -32,8 +32,7 @@ const projects = [
   {
     id: 2,
     name: "Orbit Us",
-    detail:
-      "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer ",
+    detail: "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer",
     logo: orbitus,
     url: "https://orbitus.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
@@ -42,8 +41,7 @@ const projects = [
   {
     id: 3,
     name: "Eth Link",
-    detail:
-      "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
+    detail: "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
     logo: ethlinkImg,
     url: "https://eth-link-vcpn.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
@@ -90,13 +88,16 @@ const exp = [
 const V0 = () => {
   return (
     <div className="w-full bg-black min-h-screen">
-      {/* main section   compact div pe kaam karna hai */}
-      <div className="max-w-2xl mx-auto  bg-black ">
+      {/* main section */}
+      {/* Added responsive padding px-4 for smaller screens, p-8 for larger */}
+      <div className="max-w-2xl mx-auto bg-black px-4 sm:px-8">
         {/* naming and intro */}
-        <div className="flex p-8">
-          {/* left side  */}
-          <div className="w-[70%]  flex  justify-start items-center">
-            {/* content div  */}
+        {/* Changed flex direction to column on small screens, row on medium and up */}
+        <div className="flex flex-col sm:flex-row p-4 sm:p-8 items-center sm:items-start text-center sm:text-left">
+          {/* left side */}
+          {/* Adjusted width for smaller screens, text alignment */}
+          <div className="w-full sm:w-[70%] flex justify-center sm:justify-start items-center">
+            {/* content div */}
             <motion.div
               initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
               whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
@@ -104,22 +105,25 @@ const V0 = () => {
                 duration: 0.3,
                 ease: "easeInOut",
               }}
+              className="text-center sm:text-left" // Ensure text is centered on small screens
             >
-              <p className=" text-xl font-medium text-white tracking-tighter ">
-                Hey there ! I am
+              <p className="text-lg sm:text-xl font-medium text-white tracking-tighter">
+                Hey there! I am
               </p>
-              <h1 className="text-[3rem] font-bold text-white tracking-tighter">
+              {/* Adjusted font size for different screens */}
+              <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
                 Rachit Dhaka
               </h1>
-              <p className="text-white font-medium tracking-tighter">
-                Web Developer | DSA{" "}
+              <p className="text-white font-medium tracking-tighter text-base sm:text-lg">
+                Web Developer | DSA
               </p>
             </motion.div>
           </div>
 
-          {/* right side  */}
+          {/* right side */}
+          {/* Adjusted width for smaller screens, added margin-top for separation */}
           <motion.div
-            className="w-[30%]  flex justify-end items-center py-7"
+            className="w-full sm:w-[30%] flex justify-center sm:justify-end items-center py-4 sm:py-7 mt-6 sm:mt-0"
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{
@@ -127,18 +131,19 @@ const V0 = () => {
               ease: "easeInOut",
             }}
           >
+            {/* Adjusted image size for responsiveness */}
             <img
               src={dp}
-              alt=""
-              className="h-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
+              alt="Rachit Dhaka"
+              className="h-28 w-28 sm:h-36 sm:w-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
             />
           </motion.div>
         </div>
 
-        {/* about section  */}
-
+        {/* about section */}
+        {/* Adjusted padding */}
         <motion.div
-          className="px-8"
+          className="px-4 sm:px-8 mt-4 sm:mt-0"
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -146,12 +151,11 @@ const V0 = () => {
             ease: "easeInOut",
           }}
         >
-          <h1 className="text-white font-semibold text-xl">About</h1>
-          <p className="  text-neutral-400 tracking-tight">
-            {" "}
+          <h1 className="text-white font-semibold text-lg sm:text-xl mb-2">About</h1>
+          <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
             A final-year B.Tech Computer Science Engineering student with a
             strong passion for web development and problem-solving through DSA.
-            I bring a unique blend of creativity and logic , designing with a
+            I bring a unique blend of creativity and logic, designing with a
             developer’s precision and coding with a designer’s vision.
             Constantly exploring new technologies, I enjoy building intuitive
             user experiences, solving complex problems, and contributing to
@@ -160,9 +164,9 @@ const V0 = () => {
           </p>
         </motion.div>
 
-        {/* Expoerience  */}
+        {/* Experience */}
         <motion.div
-          className="max-w-2xl "
+          className="max-w-2xl px-4 sm:px-8" // Ensure consistent padding
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -170,8 +174,8 @@ const V0 = () => {
             ease: "easeInOut",
           }}
         >
-          <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
-            Expriences
+          <h1 className="text-white font-semibold text-lg sm:text-xl mt-8 mb-4">
+            Experiences
           </h1>
 
           {exp.map((e) => (
@@ -186,8 +190,9 @@ const V0 = () => {
           ))}
         </motion.div>
 
-        {/* skillls section */}
+        {/* skills section */}
         <motion.div
+          className="px-4 sm:px-8" // Ensure consistent padding
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -198,9 +203,9 @@ const V0 = () => {
           <V0skills />
         </motion.div>
 
-        {/* Project sections  */}
-
+        {/* Project sections */}
         <motion.div
+          className="px-4 sm:px-8" // Ensure consistent padding
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -208,12 +213,13 @@ const V0 = () => {
             ease: "easeInOut",
           }}
         >
-          <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
+          <h1 className="text-white font-semibold text-lg sm:text-xl mt-8 mb-4">
             Projects
           </h1>
 
           <div className="flex justify-center">
-            <div className=" grid grid-cols-2 gap-3">
+            {/* Adjusted grid for responsiveness: 1 column on small, 2 on medium and up */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
               {projects.map((pr) => (
                 <V0projectCard
                   key={pr.id}
@@ -229,8 +235,7 @@ const V0 = () => {
           </div>
         </motion.div>
 
-        {/* Get in touch  */}
-
+        {/* Get in touch */}
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
@@ -238,41 +243,47 @@ const V0 = () => {
             duration: 0.3,
             ease: "easeInOut",
           }}
-          className="flex justify-center items-center mt-10 flex-col"
+          className="flex justify-center items-center mt-10 flex-col px-4 sm:px-8 pb-10" // Added padding-bottom
         >
-          <h1 className="text-white text-4xl font-bold">Get in Touch</h1>
+          {/* Adjusted font size for responsiveness */}
+          <h1 className="text-white text-3xl sm:text-4xl font-bold">Get in Touch</h1>
 
-          <div className="flex gap-3 py-8 ">
+          <div className="flex gap-3 py-8">
             <a
               href="https://x.com/rachitdhaka_"
               className="hover:underline font-saans"
+              aria-label="Link to Twitter profile"
             >
-              <IconBrandX stroke={1} color="white" />
+              <IconBrandX stroke={1} color="white" size={24} /> {/* Added size for consistency */}
             </a>
 
             <a
               href="https://github.com/rachitdhaka"
-              className="hover:underline font-saans "
+              className="hover:underline font-saans"
+              aria-label="Link to GitHub profile"
             >
-              <IconBrandGithub stroke={1} color="white" />
+              <IconBrandGithub stroke={1} color="white" size={24} />
             </a>
 
             <a
               href="https://www.linkedin.com/in/rachitdhaka/"
               className="hover:underline font-saans"
+              aria-label="Link to LinkedIn profile"
             >
-              <IconBrandLinkedin stroke={1} color="white" />
+              <IconBrandLinkedin stroke={1} color="white" size={24} />
             </a>
 
             <a
               href="https://codolio.com/profile/rachitdhaka"
               className="hover:underline font-saans"
+              aria-label="Link to Codolio profile"
             >
-              <IconCode stroke={1} color="white" />
+              <IconCode stroke={1} color="white" size={24} />
             </a>
           </div>
         </motion.div>
       </div>
+     
     </div>
   );
 };
