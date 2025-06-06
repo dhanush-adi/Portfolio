@@ -17,7 +17,7 @@ import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
-
+import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
@@ -97,9 +97,16 @@ const V0 = () => {
           {/* left side  */}
           <div className="w-[70%]  flex  justify-start items-center">
             {/* content div  */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+              }}
+            >
               <p className=" text-xl font-medium text-white tracking-tighter ">
-                Hey there! I am
+                Hey there ! I am
               </p>
               <h1 className="text-[3rem] font-bold text-white tracking-tighter">
                 Rachit Dhaka
@@ -107,7 +114,7 @@ const V0 = () => {
               <p className="text-white font-medium tracking-tighter">
                 Web Developer | DSA{" "}
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* right side  */}
@@ -118,16 +125,39 @@ const V0 = () => {
 
         {/* about section  */}
 
-        <div className="px-8">
+        <motion.div
+          className="px-8"
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
           <h1 className="text-white font-semibold text-xl">About</h1>
           <p className="  text-neutral-400 tracking-tight">
             {" "}
-            A final-year B.Tech Computer Science Engineering student with a strong passion for web development and problem-solving through DSA. I bring a unique blend of creativity and logic , designing with a developer’s precision and coding with a designer’s vision. Constantly exploring new technologies, I enjoy building intuitive user experiences, solving complex problems, and contributing to impactful projects. Eager to collaborate, learn, and innovate in fast-paced tech environments.
+            A final-year B.Tech Computer Science Engineering student with a
+            strong passion for web development and problem-solving through DSA.
+            I bring a unique blend of creativity and logic , designing with a
+            developer’s precision and coding with a designer’s vision.
+            Constantly exploring new technologies, I enjoy building intuitive
+            user experiences, solving complex problems, and contributing to
+            impactful projects. Eager to collaborate, learn, and innovate in
+            fast-paced tech environments.
           </p>
-        </div>
+        </motion.div>
 
         {/* Expoerience  */}
-        <div className="max-w-2xl ">
+        <motion.div
+          className="max-w-2xl "
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
           <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
             Expriences
           </h1>
@@ -142,16 +172,30 @@ const V0 = () => {
               ed={e.ed}
             />
           ))}
-        </div>
+        </motion.div>
 
         {/* skillls section */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
           <V0skills />
-        </div>
+        </motion.div>
 
         {/* Project sections  */}
 
-        <div>
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
           <h1 className="text-white font-semibold text-xl  px-8 mt-8 mb-4">
             Projects
           </h1>
@@ -171,11 +215,19 @@ const V0 = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Get in touch  */}
 
-        <div className="flex justify-center items-center mt-10 flex-col">
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+          whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex justify-center items-center mt-10 flex-col"
+        >
           <h1 className="text-white text-4xl font-bold">Get in Touch</h1>
 
           <div className="flex gap-3 py-8 ">
@@ -183,21 +235,21 @@ const V0 = () => {
               href="https://x.com/rachitdhaka_"
               className="hover:underline font-saans"
             >
-              <IconBrandX stroke={1}  color="white"/>
+              <IconBrandX stroke={1} color="white" />
             </a>
 
             <a
               href="https://github.com/rachitdhaka"
               className="hover:underline font-saans "
             >
-              <IconBrandGithub stroke={1}   color="white"/>
+              <IconBrandGithub stroke={1} color="white" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/rachitdhaka/"
               className="hover:underline font-saans"
             >
-              <IconBrandLinkedin stroke={1}  color="white"/>
+              <IconBrandLinkedin stroke={1} color="white" />
             </a>
 
             <a
@@ -207,7 +259,7 @@ const V0 = () => {
               <IconCode stroke={1} color="white" />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
