@@ -19,6 +19,9 @@ import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import V0Github from "./V0Github";
+import GitHubCalendar from 'react-github-calendar';
+
 
 const projects = [
   {
@@ -190,6 +193,10 @@ const V0 = () => {
             />
           ))}
         </motion.div>
+
+
+        {/* guthub contribution calndar  */}
+        <V0Github/>
 
         {/* skills section */}
         <motion.div
