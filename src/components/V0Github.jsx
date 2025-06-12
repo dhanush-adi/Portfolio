@@ -1,6 +1,6 @@
 import React from "react";
-import GitHubCalendar from 'react-github-calendar';
-
+import GitHubCalendar from "react-github-calendar";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 const V0Github = () => {
   const theme = {
@@ -21,7 +21,11 @@ const V0Github = () => {
   };
   return (
     <section>
-        <p className="mb-10 text-black text-2xl">Github Contribution</p>
+
+      <h1 className="text-white font-semibold text-lg pl-8 sm:text-xl mt-8 mb-4">
+            Github Contribution
+        </h1>
+  
 
       <div className="overflow-auto px-10 bg-black p-4 rounded-3xl text-white">
         <GitHubCalendar
@@ -29,12 +33,18 @@ const V0Github = () => {
           colorScheme="dark"
           theme={theme}
         />
-        <p className="mt-4 text-center text-sm">@rachitdhaka</p>
       </div>
+      <a
+        href="https://github.com/rachitdhaka"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="font-saans flex gap-3 justify-center pt-8 hover:scale-110 duration-300">
+          <p className="text-white">Github</p>
+          <IconBrandGithub stroke={1} color="white" />
+        </div>
+      </a>
     </section>
-    
-      
-
   );
 };
 

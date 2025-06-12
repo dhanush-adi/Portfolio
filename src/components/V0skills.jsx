@@ -22,9 +22,9 @@ const skills = [
 const V0skills = () => {
   return (
     <section className="max-w-2xl mx-auto">
-      <h1 className="text-white font-semibold text-2xl px-4 mt-8 mb-4">
-        Skills
-      </h1>
+      <h1 className="text-white font-semibold text-lg  sm:text-xl mt-8 mb-4">
+            Skills
+        </h1>
 
       <div className="flex justify-center">
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3 px-8">

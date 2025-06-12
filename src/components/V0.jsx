@@ -20,14 +20,14 @@ import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import V0Github from "./V0Github";
-import GitHubCalendar from 'react-github-calendar';
-
+import GitHubCalendar from "react-github-calendar";
 
 const projects = [
   {
     id: 1,
     name: "Paste Application",
-    detail: "Paste Application - Save, edit, delete your notes, code and information",
+    detail:
+      "Paste Application - Save, edit, delete your notes, code and information",
     logo: paste,
     url: "https://paste-saving.vercel.app/",
     techStack: ["React", "Tailwind", "Redux"],
@@ -36,7 +36,8 @@ const projects = [
   {
     id: 2,
     name: "Orbit Us",
-    detail: "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer",
+    detail:
+      "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer",
     logo: orbitus,
     url: "https://orbitus.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
@@ -45,7 +46,8 @@ const projects = [
   {
     id: 3,
     name: "Eth Link",
-    detail: "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
+    detail:
+      "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
     logo: ethlinkImg,
     url: "https://eth-link-vcpn.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
@@ -112,14 +114,14 @@ const V0 = () => {
               className="text-center sm:text-left" // Ensure text is centered on small screens
             >
               <p className="text-lg sm:text-xl font-medium text-white tracking-tighter">
-                Hey there! I am
+                Hi, I'm
               </p>
               {/* Adjusted font size for different screens */}
               <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
                 Rachit Dhaka
               </h1>
               <p className="text-white font-medium tracking-tighter text-base sm:text-lg">
-                Web Developer | DSA
+                Developer • DSA Enthusiast
               </p>
             </motion.div>
           </div>
@@ -127,7 +129,7 @@ const V0 = () => {
           {/* right side */}
           {/* Adjusted width for smaller screens, added margin-top for separation */}
           <motion.div
-            className="w-full sm:w-[30%] flex justify-center sm:justify-end items-center py-4 sm:py-7 mt-6 sm:mt-0"
+            className="w-full sm:w-[30%] flex justify-center sm:justify-center items-center py-4 sm:py-2 mt-6 sm:mt-0 "
             initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{
@@ -135,11 +137,10 @@ const V0 = () => {
               ease: "easeInOut",
             }}
           >
-            {/* Adjusted image size for responsiveness */}
             <img
               src={dp}
               alt="Rachit Dhaka"
-              className="h-28 w-28 sm:h-36 sm:w-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
+              className="h-20 w-20 sm:h-36 sm:w-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
             />
           </motion.div>
         </div>
@@ -155,16 +156,27 @@ const V0 = () => {
             ease: "easeInOut",
           }}
         >
-          <h1 className="text-white font-semibold text-lg sm:text-xl mb-2">About</h1>
+          <h1 className="text-white font-semibold text-lg sm:text-xl mb-2">
+            About
+          </h1>
           <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-            A final-year B.Tech Computer Science Engineering student with a
-            strong passion for web development and problem-solving through DSA.
-            I bring a unique blend of creativity and logic, designing with a
-            developer’s precision and coding with a designer’s vision.
-            Constantly exploring new technologies, I enjoy building intuitive
-            user experiences, solving complex problems, and contributing to
-            impactful projects. Eager to collaborate, learn, and innovate in
-            fast-paced tech environments.
+            Web Developer & Problem Solver
+            <br />
+            Mentor{" "}
+            <a
+              href="https://gfgsrmrmp.vercel.app/"
+              className="text-green-500 "
+            >
+              Geeks For Geeks SRM RMP
+            </a>{" "}
+            | Building{" "}
+            <a
+              href="https://vartalaappodcast.vercel.app/"
+              className=" text-red-500"
+            >
+              Vartalaap
+            </a>{" "}
+            – A Platform for Powerful Voices
           </p>
         </motion.div>
 
@@ -194,9 +206,8 @@ const V0 = () => {
           ))}
         </motion.div>
 
-
         {/* guthub contribution calndar  */}
-        <V0Github/>
+        <V0Github />
 
         {/* skills section */}
         <motion.div
@@ -213,7 +224,7 @@ const V0 = () => {
 
         {/* Project sections */}
         <motion.div
-          className="px-4 sm:px-8" // Ensure consistent padding
+          className="px-4 sm:px-8"
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -254,7 +265,9 @@ const V0 = () => {
           className="flex justify-center items-center mt-10 flex-col px-4 sm:px-8 pb-10" // Added padding-bottom
         >
           {/* Adjusted font size for responsiveness */}
-          <h1 className="text-white text-3xl sm:text-4xl font-bold">Get in Touch</h1>
+          <h1 className="text-white text-3xl sm:text-4xl font-bold">
+            Get in Touch
+          </h1>
 
           <div className="flex gap-3 pt-8">
             <a
@@ -262,7 +275,8 @@ const V0 = () => {
               className="hover:underline font-saans"
               aria-label="Link to Twitter profile"
             >
-              <IconBrandX stroke={1} color="white" size={24} /> {/* Added size for consistency */}
+              <IconBrandX stroke={1} color="white" size={24} />{" "}
+              {/* Added size for consistency */}
             </a>
 
             <a
@@ -291,16 +305,12 @@ const V0 = () => {
           </div>
         </motion.div>
 
-
-        <div className="text-[10px] text-white flex justify-center  mb-2 underline font-bold pb-10">
-           <NavLink to="/"
-        className= "duration-300"
-        >
+        <div className="text-[10px] text-white flex justify-center   underline font-bold pb-10">
+          <NavLink to="/version1" className="duration-300">
             Version 1
-        </NavLink>
+          </NavLink>
         </div>
       </div>
-     
     </div>
   );
 };
