@@ -28,8 +28,8 @@ const V0projectCard = ({
           </p>
         </div>
 
-        <div className="px-3 pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <div className="flex flex-wrap gap-2">
+        <div className="px-3  py-4 flex flex-col gap-2">
+          <div className="flex gap-2">
             {techStack.map((tech, index) => (
               <span
                 key={index}

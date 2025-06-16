@@ -165,14 +165,14 @@ const V0 = () => {
             Mentor{" "}
             <a
               href="https://gfgsrmrmp.vercel.app/"
-              className="text-green-500 "
+              className="text-neutral-50 underline "
             >
               Geeks For Geeks SRM RMP
             </a>{" "}
             | Building{" "}
             <a
               href="https://vartalaappodcast.vercel.app/"
-              className=" text-red-500"
+              className=" text-neutral-50 underline"
             >
               Vartalaap
             </a>{" "}

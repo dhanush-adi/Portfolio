@@ -122,7 +122,7 @@ const V1 = () => {
               Mentor -{" "}
               <a
                 href="https://gfgsrmrmp.vercel.app/"
-                className="font-bold font-maga hover:text-2xl duration-300 underline hover:text-green-500"
+                className="font-bold font-maga hover:text-2xl duration-300 underline hover:text-green-600 "
               >
                 GeeksForGeeks SRM RMP
               </a>{" "}
