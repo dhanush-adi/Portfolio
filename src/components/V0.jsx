@@ -254,6 +254,17 @@ const V0 = () => {
           </div>
         </motion.div>
 
+        <div>
+          <div className="font-saans flex gap-3 justify-center pt-8 hover:scale-110 duration-300">
+            <NavLink
+              to="/projects"
+              className="text-[12px] text-white sm:text-sm font-medium font-saans hover:bg-neutral-700 px-2 rounded"
+            >
+              View All Projects
+            </NavLink>
+          </div>
+        </div>
+
         {/* Get in touch */}
         <motion.div
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
@@ -262,7 +273,7 @@ const V0 = () => {
             duration: 0.3,
             ease: "easeInOut",
           }}
-          className="flex justify-center items-center mt-10 flex-col px-4 sm:px-8 pb-10" // Added padding-bottom
+          className="flex justify-center items-center mt-10 flex-col px-4 sm:px-8 pb-10"
         >
           {/* Adjusted font size for responsiveness */}
           <h1 className="text-white text-3xl sm:text-4xl font-bold">

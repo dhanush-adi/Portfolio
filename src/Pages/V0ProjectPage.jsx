@@ -73,7 +73,7 @@ const V0ProjectPage = () => {
   return (
     <section className="bg-black min-h-screen w-full p-5 ">
       {/* Project section */}
-      <section className="max-w-3xl mx-auto bg-neutral-900 p-5 rounded-4xl">
+      <section className="max-w-3xl mx-auto bg-neutral-950 p-5 rounded-4xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
           {projects.map((pr, index) => (
             <V0projectCard
