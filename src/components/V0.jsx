@@ -21,6 +21,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import V0Github from "./V0Github";
 import GitHubCalendar from "react-github-calendar";
+import HeikiBackground from "../components/HeikiBackground";
 
 const projects = [
   {
@@ -93,39 +94,13 @@ const exp = [
 
 const V0 = () => {
   return (
-    <div className="w-full bg-black min-h-screen">
+    <div className="w-full min-h-screen relative">
       {/* main section */}
       {/* Added responsive padding px-4 for smaller screens, p-8 for larger */}
-      <div className="max-w-2xl mx-auto bg-black px-4 sm:px-8">
+      <div className="max-w-2xl mx-auto  px-4 sm:px-8 relative">
         {/* naming and intro */}
         {/* Changed flex direction to column on small screens, row on medium and up */}
         <div className="flex flex-col sm:flex-row p-4 sm:p-8 items-center sm:items-start text-center sm:text-left">
-          {/* left side */}
-          {/* Adjusted width for smaller screens, text alignment */}
-          <div className="w-full sm:w-[70%] flex justify-center sm:justify-start items-center">
-            {/* content div */}
-            <motion.div
-              initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
-              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-              }}
-              className="text-center sm:text-left" // Ensure text is centered on small screens
-            >
-              <p className="text-lg sm:text-xl font-medium text-white tracking-tighter">
-                Hi, I'm
-              </p>
-              {/* Adjusted font size for different screens */}
-              <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
-                Rachit Dhaka
-              </h1>
-              <p className="text-white font-medium tracking-tighter text-base sm:text-lg">
-                Developer • DSA Enthusiast
-              </p>
-            </motion.div>
-          </div>
-
           {/* right side */}
           {/* Adjusted width for smaller screens, added margin-top for separation */}
           <motion.div
@@ -140,9 +115,34 @@ const V0 = () => {
             <img
               src={dp}
               alt="Rachit Dhaka"
-              className="h-20 w-20 sm:h-36 sm:w-36 rounded-full aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
+              className="h-20 w-20 sm:h-27 sm:w-27 rounded-4xl aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
             />
           </motion.div>
+          {/* left side */}
+          {/* Adjusted width for smaller screens, text alignment */}
+          <div className="w-full sm:w-[70%] flex justify-center sm:justify-end items-center">
+            {/* content div */}
+            <motion.div
+              initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+              }}
+              className="text-center sm:text-left"
+            >
+              <p className="text-lg sm:text-xl font-medium text-white tracking-tighter">
+                Hi, I'm
+              </p>
+              {/* Adjusted font size for different screens */}
+              <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
+                Rachit Dhaka
+              </h1>
+              <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
+                20, Chennai | Developer - Problem Solver
+              </p>
+            </motion.div>
+          </div>
         </div>
 
         {/* about section */}
@@ -160,8 +160,6 @@ const V0 = () => {
             About
           </h1>
           <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-            Web Developer & Problem Solver
-            <br />
             Mentor{" "}
             <a
               href="https://gfgsrmrmp.vercel.app/"

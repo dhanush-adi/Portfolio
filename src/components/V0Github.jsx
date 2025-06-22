@@ -27,7 +27,7 @@ const V0Github = () => {
         </h1>
   
 
-      <div className="overflow-auto px-10 bg-black p-4 rounded-3xl text-white">
+      <div className="overflow-auto px-10 bg-[#0a0a0a] p-4 rounded-3xl text-white">
         <GitHubCalendar
           username="rachitdhaka"
           colorScheme="dark"

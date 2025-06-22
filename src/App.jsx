@@ -7,6 +7,7 @@ import FooterV1 from "./components/FooterV1";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import V0Navbar from "./components/V0Navbar";
+import HeikiBackground from "./components/HeikiBackground"
 
 const router = createBrowserRouter(
   [
@@ -54,7 +55,20 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <div className="min-h-screen bg-black relative">
+      <HeikiBackground
+        primaryColor="#ededed"
+        backgroundColor = "#0a0a0a"
+        
+        pattern="grid"
+        density="dense"
+        opacity={0.2}
+      />
+      <div className="relative">
+        <RouterProvider router={router} />
+      </div>
+    </div>
+    
   )
 
 }

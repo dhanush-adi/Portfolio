@@ -1,11 +1,11 @@
-import { section } from "motion/react-client";
+import { div, section } from "motion/react-client";
 import React from "react";
 import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import V0projectCard from "../components/V0projectCard";
-
+import HeikiBackground from "../components/HeikiBackground";
 const projects = [
   {
     id: 1,
@@ -71,26 +71,36 @@ const projects = [
 
 const V0ProjectPage = () => {
   return (
-    <section className="bg-black min-h-screen w-full p-5 ">
-      {/* Project section */}
-      <section className="max-w-3xl mx-auto bg-neutral-950 p-5 rounded-4xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
-          {projects.map((pr, index) => (
-            <V0projectCard
-              key={index}
-              name={pr.name}
-              logo={pr.logo}
-              detail={pr.detail}
-              url={pr.url}
-              techStack={pr.techStack}
-              githubUrl={pr.githubUrl}
-            />
-          ))}
-        </div>
+    
+      
+      <section className="bg-black min-h-screen w-full p-5 relative">
+        <HeikiBackground
+        primaryColor="#ededed"
+        backgroundColor = "#0a0a0a"
+        
+        pattern="grid"
+        density="dense"
+        opacity={0.2}
+      />
+        {/* Project section */}
+        <section className="max-w-3xl mx-auto bg-neutral-950 p-5 rounded-4xl relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
+            {projects.map((pr, index) => (
+              <V0projectCard
+                key={index}
+                name={pr.name}
+                logo={pr.logo}
+                detail={pr.detail}
+                url={pr.url}
+                techStack={pr.techStack}
+                githubUrl={pr.githubUrl}
+              />
+            ))}
+          </div>
+        </section>
       </section>
-    </section>
+   
   );
 };
-
 
 export default V0ProjectPage;

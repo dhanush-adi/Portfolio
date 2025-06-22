@@ -5,7 +5,7 @@ const V0Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <section className="bg-black">
+    <section className="">
       <section className="text-white max-w-2xl mx-auto px-14 flex justify-between items-center pt-5 md:h-12 relative">
         {/* Left Side: Logo */}
         <div>
