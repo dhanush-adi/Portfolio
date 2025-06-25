@@ -10,7 +10,7 @@ const V0projectCard = ({
 }) => {
   return (
     <section>
-      <div className="border border-neutral-700 rounded-xl flex flex-col w-full max-w-xs sm:max-w-sm mx-auto overflow-hidden">
+      <div className="border border-neutral-800 rounded-xl flex flex-col w-full max-w-xs sm:max-w-sm mx-auto bg-neutral-950">
         <div className="p-2">
           <img
             src={logo}
