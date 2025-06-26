@@ -48,25 +48,16 @@ const projects = [
   },
 
   {
-    id: 1,
-    name: "Paste Application",
+    id: 5,
+    name: "Weather App",
     detail:
-      "Paste Application - Save, edit, delete your notes, code and information",
+      "Weather App - Get the current weather of any city in the world",
     logo: paste,
-    url: "https://paste-saving.vercel.app/",
-    techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
+    url: "https://weather-rachit.vercel.app/",
+    techStack: ["React", "Tailwind" , "Api"],
+    githubUrl: "https://github.com/rachitdhaka/Weather-Application",
   },
-  {
-    id: 1,
-    name: "Paste Application",
-    detail:
-      "Paste Application - Save, edit, delete your notes, code and information",
-    logo: paste,
-    url: "https://paste-saving.vercel.app/",
-    techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
-  },
+  
 ];
 
 const V0ProjectPage = () => {
