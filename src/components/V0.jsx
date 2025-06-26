@@ -1,5 +1,3 @@
-import React from "react";
-import FooterV0 from "./FooterV0"; // Assuming FooterV0 is already responsive or will be made so
 import gfg from "../assets/Images/gfglogo.png";
 import dp from "../assets/Images/Orginal.jpg";
 import V0exp from "./V0exp"; // Assuming V0exp handles its own responsiveness
@@ -20,6 +18,7 @@ import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import V0Github from "./V0Github";
+import weather from "../assets/Images/weather.png";
 import GitHubCalendar from "react-github-calendar";
 import HeikiBackground from "../components/HeikiBackground";
 
@@ -60,7 +59,7 @@ const projects = [
       name: "Weather App",
       detail:
         "Weather App - Get the current weather of any city in the world",
-      logo: paste,
+      logo: weather,
       url: "https://weather-rachit.vercel.app/",
       techStack: ["React", "Tailwind" , "Api"],
       githubUrl: "https://github.com/rachitdhaka/Weather-Application",
