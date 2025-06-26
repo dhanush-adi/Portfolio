@@ -12,11 +12,13 @@ const V0projectCard = ({
     <section>
       <div className="border border-neutral-800 rounded-xl flex flex-col w-full max-w-xs sm:max-w-sm mx-auto bg-neutral-950">
         <div className="p-2">
-          <img
+          <a href={url} target="_blank" >
+            <img
             src={logo}
             alt={`Preview of ${name}`}
             className="w-full h-32 sm:h-40 rounded-lg object-cover aspect-video"
           />
+          </a>
         </div>
 
         <div className="p-3">
