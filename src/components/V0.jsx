@@ -54,15 +54,17 @@ const projects = [
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
     githubUrl: "https://github.com/rachitdhaka/EthLink",
   },
+  
   {
-    id: 4,
-    name: "Tic Tac Toe",
-    detail: "Simple Game",
-    logo: game,
-    url: "https://tictactoe-rachit.vercel.app/",
-    techStack: ["React", "Tailwind"],
-    githubUrl: "https://github.com/rachitdhaka/Tic-Tac-Toe",
-  },
+      id: 4,
+      name: "Weather App",
+      detail:
+        "Weather App - Get the current weather of any city in the world",
+      logo: paste,
+      url: "https://weather-rachit.vercel.app/",
+      techStack: ["React", "Tailwind" , "Api"],
+      githubUrl: "https://github.com/rachitdhaka/Weather-Application",
+    },
 ];
 
 const exp = [
