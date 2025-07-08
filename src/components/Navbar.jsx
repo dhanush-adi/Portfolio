@@ -62,7 +62,7 @@ const Navbar = () => {
           <ul className="flex space-x-4 text-[12px] sm:text-[14px]">
             <li>
               <a
-                href="https://github.com/rachitdhaka"
+                href="https://github.com/dhanush-adi"
                 className="hover:underline font-saans"
               >
                 <IconBrandGithub stroke={1} />
@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="https://x.com/rachitdhaka_"
+                href="https://x.com/Dhanush1785"
                 className="hover:underline font-saans"
               >
                 <IconBrandX stroke={1} />
@@ -78,7 +78,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/rachitdhaka/"
+                href="https://www.linkedin.com/in/dhanush-adithyan/"
                 className="hover:underline font-saans"
               >
                 <IconBrandLinkedin stroke={1} />
@@ -86,7 +86,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="https://codolio.com/profile/rachitdhaka"
+                href="https://codolio.com/profile/dhanush_adi"
                 className="hover:underline font-saans"
               >
                 <IconCode stroke={1} />
@@ -110,7 +110,7 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-6 text-[18px] font-medium text-center">
               <li>
                 <a
-                  href="https://github.com/rachitdhaka"
+                  href="https://github.com/dhanush-adi"
                   className="hover:underline font-saans"
                 >
                   GitHub
@@ -118,7 +118,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://x.com/rachitdhaka_"
+                  href="https://x.com/Dhanush1785"
                   className="hover:underline font-saans"
                 >
                   Twitter
@@ -126,7 +126,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/rachitdhaka/"
+                  href="https://www.linkedin.com/in/dhanush-adithyan/"
                   className="hover:underline font-saans"
                 >
                   LinkedIn
@@ -134,7 +134,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://codolio.com/profile/rachitdhaka"
+                  href="https://codolio.com/profile/dhanush_adi"
                   className="hover:underline font-saans"
                 >
                   Coding

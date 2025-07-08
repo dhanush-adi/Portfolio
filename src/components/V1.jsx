@@ -39,7 +39,7 @@ const projects = [
     title: "Tic Tac Toe",
     description: "Simple Game.",
     image: game,
-    url: "https://tictactoe-rachit.vercel.app/",
+    url: "https://tictactoe-dhanush.vercel.app/",
   },
 ];
 
@@ -82,7 +82,7 @@ const V1 = () => {
                 >
                   Hello, I'm{" "}
                   <span className="hover:text-amber-600 ease-in duration-300">
-                    Rachit Dhaka
+                    Dhanush Adithyan
                   </span>
                 </motion.h1>
 
@@ -105,7 +105,7 @@ const V1 = () => {
 
               {/* image div */}
               <div className="w-[20%]  sm:w-[20%] flex justify-center items-center ">
-                <img src={dp} alt="Rachit Dhaka Image " className="rounded-full h-22 w-22   sm:h-32 sm:w-32" />
+                <img src={dp} alt="Dhanush Adithyan Image " className="rounded-full h-22 w-22   sm:h-32 sm:w-32" />
               </div>
             </div>
 

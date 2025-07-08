@@ -62,7 +62,7 @@ const V0Navbar = () => {
           </div>
           <div className="hover:bg-neutral-700 px-2 py-0.5 rounded">
             <a
-              href="https://github.com/rachitdhaka"
+              href="https://github.com/dhanush-adi"
               target="_blank"
               className="text-[12px] sm:text-[14px] font-medium font-saans"
             >
@@ -71,7 +71,7 @@ const V0Navbar = () => {
           </div>
           <div className="hover:bg-neutral-700 px-2 py-0.5 rounded">
             <a
-              href="https://leetcode.com/u/rachitdhaka/"
+              href="https://leetcode.com/u/dhanush_adi/"
               target="_blank"
               className="text-[12px] sm:text-[14px] font-medium font-saans"
             >
@@ -95,14 +95,14 @@ const V0Navbar = () => {
             Projects
           </NavLink>
           <a
-            href="https://github.com/rachitdhaka"
+            href="https://github.com/dhanush-adi"
             target="_blank"
             onClick={() => setIsMenuOpen(false)}
           >
             Github
           </a>
           <a
-            href="https://leetcode.com/u/rachitdhaka/"
+            href="https://leetcode.com/u/dhanush_adi/"
             target="_blank"
             onClick={() => setIsMenuOpen(false)}
           >

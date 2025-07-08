@@ -71,7 +71,7 @@ function GithubCalendar() {
           className="bg-white p-4 flex flex-col justify-self-center rounded-xl shadow-md"
         >
           <GitHubCalendar
-            username="rachitdhaka"
+            username="dhanush-adi"
             transformData={processContributions}
             totalCount={totalCount}
             theme={theme}
@@ -83,7 +83,7 @@ function GithubCalendar() {
           className="flex justify-center mt-5"
         >
           <a
-            href="https://github.com/rachitdhaka"
+            href="https://github.com/dhanush-adi"
             target="_blank"
             rel="noopener noreferrer"
           >

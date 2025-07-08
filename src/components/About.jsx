@@ -50,7 +50,7 @@ const About = () => {
         {/* Mera Intro */}
         <div className="mb-8">
           <p className="font-sans py-3 sm:py-4" style={{ wordSpacing: "0.2rem" }}>
-            Hey there, I'm Rachit Dhaka — a builder at heart with a passion for
+            Hey there, I'm Dhanush Adithyan — a builder at heart with a passion for
             solving real-world problems through tech. I love creating things
             from the ground up, whether it's developing my own products or
             collaborating with forward-thinking teams to bring impactful ideas
@@ -90,7 +90,7 @@ const About = () => {
             free to reach out:
           </p>
           <span className="font-bold font-saans underline ">
-            <a href="">rachitdhaka29@gmail.com</a>
+            <a href="">dhanushadithyan@gmail.com</a>
           </span>
         </div>
 
@@ -124,7 +124,7 @@ const About = () => {
         {/* resume section */}
         <div className="p-4 font-maga text-neutral-500">
           <a
-            href="https://bit.ly/rachitdhaka-resume"
+            href="https://bit.ly/dhanushadithyan-resume"
             target="_blank"
             rel="noopener noreferrer"
           >

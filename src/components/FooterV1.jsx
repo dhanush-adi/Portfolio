@@ -13,7 +13,7 @@ const FooterV1 = () => {
         </NavLink>
       </div>
       <div className="text-[10px] text-[#9b9b9b] flex justify-center ">
-        Made with ❤️ by Rachit Dhaka
+        Made with ❤️ by Dhanush Adithyan
       </div>
     </div>
   );

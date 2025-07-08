@@ -34,7 +34,7 @@ const projects = [
     title: "Tic Tac Toe",
     description: "Simple Game.",
     image: game,
-    url: "https://tictactoe-rachit.vercel.app/",
+    url: "https://tictactoe-dhanush.vercel.app/",
   },
 ];
 

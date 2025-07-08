@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const RachitDhaka = () => {
+const DhanushAdithyan = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ const RachitDhaka = () => {
           hovered ? "-translate-y-full" : "translate-y-0"
         }`}
       >
-        rachit DHaka
+        Dhanush Adithyan
       </span>
 
       {/* New Word */}
@@ -24,10 +24,10 @@ const RachitDhaka = () => {
           hovered ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        RD
+        DA
       </span>
     </div>
   );
 };
 
-export default RachitDhaka;
+export default DhanushAdithyan;

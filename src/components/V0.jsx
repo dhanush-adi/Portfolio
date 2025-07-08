@@ -25,44 +25,44 @@ import HeikiBackground from "../components/HeikiBackground";
 const projects = [
   {
     id: 1,
-    name: "Paste Application",
+    name: "Web3 Gig Platform",
     detail:
-      "Paste Application - Save, edit, delete your notes, code and information",
-    logo: paste,
-    url: "https://paste-saving.vercel.app/",
-    techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
+      "A decentralized platform for freelance work powered by blockchain technology. Built with TypeScript and Web3 technologies.",
+    logo: orbitus,
+    url: "https://github.com/dhanush-adi/Web3-gig-platform",
+    techStack: ["TypeScript", "Web3", "Blockchain", "Smart Contracts"],
+    githubUrl: "https://github.com/dhanush-adi/Web3-gig-platform",
   },
   {
     id: 2,
-    name: "Orbit Us",
+    name: "Reclaim",
     detail:
-      "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer",
-    logo: orbitus,
-    url: "https://orbitus.vercel.app/",
-    techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/Drop-Service---Orbit-Us",
+      "A comprehensive TypeScript application with MIT license. Features modern development practices and clean architecture.",
+    logo: paste,
+    url: "https://github.com/dhanush-adi/Reclaim",
+    techStack: ["TypeScript", "MIT License", "Clean Architecture"],
+    githubUrl: "https://github.com/dhanush-adi/Reclaim",
   },
   {
     id: 3,
-    name: "Eth Link",
+    name: "Blockchain Microinsurance",
     detail:
-      "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
+      "A blockchain-based microinsurance platform built with TypeScript. Provides decentralized insurance solutions.",
     logo: ethlinkImg,
-    url: "https://eth-link-vcpn.vercel.app/",
-    techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/EthLink",
+    url: "https://github.com/dhanush-adi/Blochchain-Microinsurance",
+    techStack: ["TypeScript", "Blockchain", "Insurance", "DeFi"],
+    githubUrl: "https://github.com/dhanush-adi/Blochchain-Microinsurance",
   },
   
   {
       id: 4,
-      name: "Weather App",
+      name: "DeFy25 Petition Onchain",
       detail:
-        "Weather App - Get the current weather of any city in the world",
+        "An on-chain petition system built for DeFy25. Enables transparent and immutable petition creation and voting.",
       logo: weather,
-      url: "https://weather-rachit.vercel.app/",
-      techStack: ["React", "Tailwind" , "Api"],
-      githubUrl: "https://github.com/rachitdhaka/Weather-Application",
+      url: "https://github.com/dhanush-adi/DeFy25-Petition_Onchain",
+      techStack: ["JavaScript", "Blockchain", "Smart Contracts", "DeFi"],
+      githubUrl: "https://github.com/dhanush-adi/DeFy25-Petition_Onchain",
     },
 ];
 
@@ -115,7 +115,7 @@ const V0 = () => {
           >
             <img
               src={dp}
-              alt="Rachit Dhaka"
+              alt="Dhanush Adithyan"
               className="h-20 w-20 sm:h-27 sm:w-27 rounded-4xl aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
             />
           </motion.div>
@@ -137,7 +137,7 @@ const V0 = () => {
               </p>
               {/* Adjusted font size for different screens */}
               <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
-                Rachit Dhaka
+                Dhanush Adithyan
               </h1>
               <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
                 20, Chennai | Developer - Problem Solver
@@ -281,7 +281,7 @@ const V0 = () => {
 
           <div className="flex gap-3 pt-8">
             <a
-              href="https://x.com/rachitdhaka_"
+              href="https://x.com/Dhanush1785"
               className="hover:underline font-saans"
               aria-label="Link to Twitter profile"
             >
@@ -290,7 +290,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://github.com/rachitdhaka"
+              href="https://github.com/dhanush-adi"
               className="hover:underline font-saans"
               aria-label="Link to GitHub profile"
             >
@@ -298,7 +298,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/rachitdhaka/"
+              href="https://www.linkedin.com/in/dhanush-adithyan/"
               className="hover:underline font-saans"
               aria-label="Link to LinkedIn profile"
             >
@@ -306,7 +306,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://codolio.com/profile/rachitdhaka"
+              href="https://codolio.com/profile/dhanush_adi"
               className="hover:underline font-saans"
               aria-label="Link to Codolio profile"
             >
