@@ -1,7 +1,5 @@
 import React from "react";
 import Experience from "./Experience";
-import gfg from "../assets/Images/gfglogo.png";
-import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import FooterV1 from "./FooterV1";
 import { motion } from "motion/react";
@@ -9,29 +7,11 @@ import { motion } from "motion/react";
 const experience = [
   {
     id: 1,
-    name: "GeeksForGeeks SRM RMP",
-    position: "Core Member - Head of Operations",
-    logo: gfg,
-    sd: "Aug 2024",
-    ed: "Apr 2025",
-    time: "9 Months"
-  },
-  {
-    id: 2,
-    name: "Vartalaap Podcast",
-    position: "Co-Founder & Host",
-    logo: vp,
-    sd: "Dec 2023",
-    ed: "Mar 2024",
-    time: "3 Months"
-  },
-  {
-    id: 3,
     name: "Code Kraftors",
-    position: "Web3 Domain Member",
+    position: "Member->Lead->Head",
     logo: ck,
-    sd: "Nov 2022",
-    ed: "Jul 2024",
+    sd: "Nov - 2023",
+    ed: "Present",
     time: "1 Year 9 Months"
   },
 ];

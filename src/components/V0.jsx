@@ -1,7 +1,5 @@
-import gfg from "../assets/Images/gfglogo.png";
 import dp from "../assets/Images/Orginal.jpg";
 import V0exp from "./V0exp"; // Assuming V0exp handles its own responsiveness
-import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import V0skills from "./V0skills"; // Assuming V0skills handles its own responsiveness
 import {
@@ -69,27 +67,12 @@ const projects = [
 const exp = [
   {
     id: 1,
-    name: "GeeksForGeeks SRM RMP",
-    position: "Core Member - Head of Operations",
-    logo: gfg,
-    sd: "Aug 2024",
-    ed: "Apr 2025",
-  },
-  {
-    id: 2,
-    name: "Vartalaap Podcast",
-    position: "Host & Co-Founder",
-    logo: vp,
-    sd: "Dec 2023",
-    ed: "Mar 2024",
-  },
-  {
-    id: 3,
-    name: "Code Kraftors",
-    position: "Web3 Domain Member",
-    logo: ck,
-    sd: "Nov 2022",
-    ed: "Jul 2024",
+    name: "Code Krafters",
+        position: "Member->Lead->Head",
+        logo: ck,
+        sd: "Nov - 2023",
+        ed: "Present",
+        time: "1 Year 9 Months"
   },
 ];
 
