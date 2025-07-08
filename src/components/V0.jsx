@@ -161,21 +161,7 @@ const V0 = () => {
             About
           </h1>
           <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-            Mentor{" "}
-            <a
-              href="https://gfgsrmrmp.vercel.app/"
-              className="text-neutral-50 underline "
-            >
-              Geeks For Geeks SRM RMP
-            </a>{" "}
-            | Building{" "}
-            <a
-              href="https://vartalaappodcast.vercel.app/"
-              className=" text-neutral-50 underline"
-            >
-              Vartalaap
-            </a>{" "}
-            – A Platform for Powerful Voices
+            Hey there — I'm a Computer Science & Engineering junior who codes best under the influence of caffeine and late-night deadlines. I'm deep into Web3 and blockchain, and currently sharpening my skills in competitive programming and web development. Most of my ideas start with a whiteboard and end with a Git commit… sometimes at 3AM with a can of Mountain Dew in hand. I build fast, break things occasionally, and learn even faster.
           </p>
         </motion.div>
 
