@@ -1,30 +1,10 @@
 import React from "react";
 import Experience from "./Experience";
-import gfg from "../assets/Images/gfglogo.png";
-import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import FooterV1 from "./FooterV1";
 import { motion } from "motion/react";
 
-const experience = [
-  {
-    id: 1,
-    name: "GeeksForGeeks SRM RMP",
-    position: "Core Member - Head of Operations",
-    logo: gfg,
-    sd: "Aug 2024",
-    ed: "Apr 2025",
-    time: "9 Months"
-  },
-  {
-    id: 2,
-    name: "Vartalaap Podcast",
-    position: "Co-Founder & Host",
-    logo: vp,
-    sd: "Dec 2023",
-    ed: "Mar 2024",
-    time: "3 Months"
-  },
+const exp = [
   {
     id: 3,
     name: "Code Kraftors",
@@ -72,9 +52,8 @@ const About = () => {
             connect, learn, and grow.
           </p>
           <p className="font-sans py-3 sm:py-4" style={{ wordSpacing: "0.2rem" }}>
-            Beyond tech, I've also ventured into content creation with my
-            YouTube podcast, Vartalaap Podcast, where I have real and raw
-            conversations with people doing interesting things — from tech to
+            Beyond tech, I've also ventured into content creation and enjoy
+            having real conversations with people doing interesting things — from tech to
             startups and everything in between.
           </p>
           <p className="font-sans py-3 sm:py-4" style={{ wordSpacing: "0.2rem" }}>
@@ -90,7 +69,7 @@ const About = () => {
             free to reach out:
           </p>
           <span className="font-bold font-saans underline ">
-            <a href="">rachitdhaka29@gmail.com</a>
+            <a href="">dhanushvallalar@gmail.com</a>
           </span>
         </div>
 
@@ -108,7 +87,7 @@ const About = () => {
               ease: "easeInOut",
             }}>
           {/* <Experience /> */}
-          {experience.map((experience) => (
+          {exp.map((experience) => (
             <Experience
               key={experience.id}
               name={experience.name}

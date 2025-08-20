@@ -19,7 +19,7 @@ const V0Navbar = () => {
             to="/"
             className="text-[12px] sm:text-[14px] font-medium font-saans"
           >
-            rd
+            dA
           </NavLink>
         </div>
 

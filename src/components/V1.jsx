@@ -119,21 +119,7 @@ const V1 = () => {
                 Solver
               </span>{" "}
               <br />
-              Mentor -{" "}
-              <a
-                href="https://gfgsrmrmp.vercel.app/"
-                className="font-bold font-maga hover:text-2xl duration-300 underline hover:text-green-600 "
-              >
-                GeeksForGeeks SRM RMP
-              </a>{" "}
-              | Building{" "}
-              <a
-                href="https://vartalaappodcast.vercel.app/"
-                className="font-bold font-maga hover:text-2xl duration-300 underline hover:text-red-500"
-              >
-                Vartalaap
-              </a>{" "}
-              - A Podcast Platform for Voices That Matter
+              Computer Science & Engineering Junior | Web 3/Blockchain Enthusiast | Currently Practicing CP and Web Development.
             </motion.p>
 
             <NavLink to="/about">

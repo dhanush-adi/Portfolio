@@ -1,7 +1,5 @@
-import gfg from "../assets/Images/gfglogo.png";
 import dp from "../assets/Images/Orginal.jpg";
 import V0exp from "./V0exp"; // Assuming V0exp handles its own responsiveness
-import vp from "../assets/Images/VARTAA.png";
 import ck from "../assets/Images/download.jpeg";
 import V0skills from "./V0skills"; // Assuming V0skills handles its own responsiveness
 import {
@@ -80,28 +78,12 @@ const projects = [
 
 const exp = [
   {
-    id: 1,
-    name: "GeeksForGeeks SRM RMP",
-    position: "Core Member - Head of Operations",
-    logo: gfg,
-    sd: "Aug 2024",
-    ed: "Apr 2025",
-  },
-  {
-    id: 2,
-    name: "Vartalaap Podcast",
-    position: "Host & Co-Founder",
-    logo: vp,
-    sd: "Dec 2023",
-    ed: "Mar 2024",
-  },
-  {
     id: 3,
-    name: "Code Kraftors",
-    position: "Web3 Domain Member",
+    name: "Code Krafters",
+    position: "Member -> Lead -> Head",
     logo: ck,
-    sd: "Nov 2022",
-    ed: "Jul 2024",
+    sd: "Nov 2023",
+    ed: "Present",
   },
 ];
 
@@ -152,7 +134,7 @@ const V0 = () => {
                 Dhanush Adithyan
               </h1>
               <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-                Computer Science & Engineering Junior | Web 3/Blockchain Enthusiast | Currently Practicing CP and Web Development.
+                Chennai/Bangalore - India, SRMIST - CSE 
               </p>
             </motion.div>
           </div>
@@ -172,23 +154,9 @@ const V0 = () => {
           <h1 className="text-white font-semibold text-lg sm:text-xl mb-2">
             About
           </h1>
-          <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-            Mentor{" "}
-            <a
-              href="https://gfgsrmrmp.vercel.app/"
-              className="text-neutral-50 underline "
-            >
-              Geeks For Geeks SRM RMP
-            </a>{" "}
-            | Building{" "}
-            <a
-              href="https://vartalaappodcast.vercel.app/"
-              className=" text-neutral-50 underline"
-            >
-              Vartalaap
-            </a>{" "}
-            – A Platform for Powerful Voices
-          </p>
+              <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
+                Computer Science & Engineering Junior | Web 3/Blockchain Enthusiast | Currently Practicing CP and Web Development.
+              </p>
         </motion.div>
 
         {/* Experience */}
