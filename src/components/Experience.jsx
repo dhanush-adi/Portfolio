@@ -1,6 +1,4 @@
 import React from 'react'
-import logo from "../assets/Images/gfglogo.png"
-
 const Experience = ( {logo, name , position , sd , ed ,time}) => {
   return (
     <div>
