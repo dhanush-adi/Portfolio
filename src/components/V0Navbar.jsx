@@ -102,7 +102,7 @@ const V0Navbar = () => {
           </div>
           <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
             <a
-              href="https://leetcode.com/u/rachitdhaka/"
+              href="https://codolio.com/profile/dhanush_adi"
               target="_blank"
               className="text-[12px] sm:text-[14px] font-medium font-saans"
             >
@@ -144,11 +144,11 @@ const V0Navbar = () => {
             Github
           </a>
           <a
-            href="https://leetcode.com/u/rachitdhaka/"
+            href="https://codolio.com/profile/dhanush_adi"
             target="_blank"
             onClick={() => setIsMenuOpen(false)}
           >
-            Leetcode
+            Codolio
           </a>
         </div>
       )}

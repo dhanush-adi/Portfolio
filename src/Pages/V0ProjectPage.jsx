@@ -19,7 +19,7 @@ const projects = [
     logo: paste,
     url: "https://paste-saving.vercel.app/",
     techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
+    githubUrl: "https://github.com/dhanush-adi/Paste-Application",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const projects = [
     logo: orbitus,
     url: "https://orbitus.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/Drop-Service---Orbit-Us",
+    githubUrl: "https://github.com/dhanush-adi/Drop-Service---Orbit-Us",
   },
   {
     id: 7,
@@ -39,7 +39,7 @@ const projects = [
     logo: reactRef,
     url: "https://reactref.vercel.app/",
     techStack: ["React", "Tailwind" ],
-    githubUrl: "https://github.com/rachitdhaka/React-Ref",
+    githubUrl: "https://github.com/dhanush-adi/React-Ref",
   },
   
   {
@@ -50,7 +50,7 @@ const projects = [
     logo: ethlinkImg,
     url: "https://eth-link-vcpn.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/EthLink",
+    githubUrl: "https://github.com/dhanush-adi/EthLink",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const projects = [
     logo: game,
     url: "https://tictactoe-rachit.vercel.app/",
     techStack: ["React", "Tailwind"],
-    githubUrl: "https://github.com/rachitdhaka/Tic-Tac-Toe",
+    githubUrl: "https://github.com/dhanush-adi/Tic-Tac-Toe",
   },
 
   {
@@ -70,7 +70,7 @@ const projects = [
     logo: weather,
     url: "https://weather-rachit.vercel.app/",
     techStack: ["React", "Tailwind" , "Api"],
-    githubUrl: "https://github.com/rachitdhaka/Weather-Application",
+    githubUrl: "https://github.com/dhanush-adi/Weather-Application",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const projects = [
     logo: chatbot,
     url: "https://chatbot-rachit.vercel.app/",
     techStack: ["React", "Tailwind" , "Api" , "Google AI"],
-    githubUrl: "http://github.com/rachitdhaka/Chat-Bot-Application",
+    githubUrl: "https://github.com/dhanush-adi/Chat-Bot-Application",
   },
 ];
 

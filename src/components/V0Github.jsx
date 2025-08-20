@@ -29,13 +29,13 @@ const V0Github = () => {
 
       <div className="overflow-auto px-10 bg-[#0a0a0a] p-4 rounded-3xl text-white">
         <GitHubCalendar
-          username="rachitdhaka"
+          username="dhanush-adi"
           colorScheme="dark"
           theme={theme}
         />
       </div>
       <a
-        href="https://github.com/rachitdhaka"
+        href="https://github.com/dhanush-adi"
         target="_blank"
         rel="noopener noreferrer"
       >

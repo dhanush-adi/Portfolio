@@ -50,7 +50,7 @@ const About = () => {
         {/* Mera Intro */}
         <div className="mb-8">
           <p className="font-sans py-3 sm:py-4" style={{ wordSpacing: "0.2rem" }}>
-            Hey there, I'm Rachit Dhaka — a builder at heart with a passion for
+            Hey there, I'm Dhanush Adithyan — a builder at heart with a passion for
             solving real-world problems through tech. I love creating things
             from the ground up, whether it's developing my own products or
             collaborating with forward-thinking teams to bring impactful ideas

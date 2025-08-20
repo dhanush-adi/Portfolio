@@ -6,7 +6,7 @@ const FooterV0 = () => {
     <div>
       <div className="text-[16px] font-medium text-[#9b9b9b] flex justify-center gap-7 ">
         <a
-          href="https://x.com/rachitdhaka_"
+          href="https://x.com/Dhanush1785"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Twitter
@@ -14,7 +14,7 @@ const FooterV0 = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/rachitdhaka/"
+          href="https://www.linkedin.com/in/dhanush-adithyan/"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           LinkedIn
@@ -22,7 +22,7 @@ const FooterV0 = () => {
         </a>
 
         <a
-          href="https://github.com/rachitdhaka"
+          href="https://github.com/dhanush-adi"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Github
@@ -30,7 +30,7 @@ const FooterV0 = () => {
         </a>
 
         <a
-          href="https://codolio.com/profile/rachitdhaka"
+          href="https://codolio.com/profile/dhanush_adi"
           className="relative hover:text-white transition-colors duration-300 group"
         >
           Coding
@@ -43,9 +43,9 @@ const FooterV0 = () => {
             v1
         </NavLink>
       </div>
-
-      <div className="text-[10px] text-[#9b9b9b] flex justify-center mt-1">
-      Made with ❤️ by Rachit Dhaka
+      
+      <div className="text-white/50 text-center py-4 text-xs">
+      Made with ❤️ by Dhanush Adithyan
       </div>
     </div>
   );

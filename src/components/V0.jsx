@@ -32,7 +32,7 @@ const projects = [
     logo: paste,
     url: "https://paste-saving.vercel.app/",
     techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/rachitdhaka/Paste-Application",
+    githubUrl: "https://github.com/dhanush-adi/Paste-Application",
   },
 
   {
@@ -43,7 +43,7 @@ const projects = [
     logo: orbitus,
     url: "https://orbitus.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/Drop-Service---Orbit-Us",
+    githubUrl: "https://github.com/dhanush-adi/Drop-Service---Orbit-Us",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const projects = [
     logo: ethlinkImg,
     url: "https://eth-link-vcpn.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/rachitdhaka/EthLink",
+    githubUrl: "https://github.com/dhanush-adi/EthLink",
   },
 
   {
@@ -64,7 +64,7 @@ const projects = [
     logo: chatbot,
     url: "https://chatbot-rachit.vercel.app/",
     techStack: ["React", "Tailwind", "Api", "Google AI"],
-    githubUrl: "http://github.com/rachitdhaka/Chat-Bot-Application",
+    githubUrl: "https://github.com/dhanush-adi/Chat-Bot-Application",
   },
   {
       id: 5,
@@ -74,7 +74,7 @@ const projects = [
       logo: reactRef,
       url: "https://reactref.vercel.app/",
       techStack: ["React", "Tailwind" ],
-      githubUrl: "https://github.com/rachitdhaka/React-Ref",
+      githubUrl: "https://github.com/dhanush-adi/React-Ref",
     },
 ];
 
@@ -127,7 +127,7 @@ const V0 = () => {
           >
             <img
               src={dp}
-              alt="Rachit Dhaka"
+              alt="Dhanush Adithyan"
               className="h-20 w-20 sm:h-27 sm:w-27 rounded-4xl aspect-square shadow-[0_4px_30px_rgba(255,255,255,0.25)]"
             />
           </motion.div>
@@ -149,10 +149,10 @@ const V0 = () => {
               </p>
               {/* Adjusted font size for different screens */}
               <h1 className="text-4xl sm:text-[3rem] font-bold text-white tracking-tighter">
-                Rachit Dhaka
+                Dhanush Adithyan
               </h1>
               <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-                20, Chennai | Developer - Problem Solver
+                Computer Science & Engineering Junior | Web 3/Blockchain Enthusiast | Currently Practicing CP and Web Development.
               </p>
             </motion.div>
           </div>
@@ -292,7 +292,7 @@ const V0 = () => {
 
           <div className="flex gap-3 pt-8">
             <a
-              href="https://x.com/rachitdhaka_"
+              href="https://x.com/Dhanush1785"
               className="hover:underline font-saans"
               aria-label="Link to Twitter profile"
             >
@@ -301,7 +301,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://github.com/rachitdhaka"
+              href="https://github.com/dhanush-adi"
               className="hover:underline font-saans"
               aria-label="Link to GitHub profile"
             >
@@ -309,7 +309,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/rachitdhaka/"
+              href="https://www.linkedin.com/in/dhanush-adithyan/"
               className="hover:underline font-saans"
               aria-label="Link to LinkedIn profile"
             >
@@ -317,7 +317,7 @@ const V0 = () => {
             </a>
 
             <a
-              href="https://codolio.com/profile/rachitdhaka"
+              href="https://codolio.com/profile/dhanush_adi"
               className="hover:underline font-saans"
               aria-label="Link to Codolio profile"
             >
