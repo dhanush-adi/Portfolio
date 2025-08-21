@@ -24,24 +24,22 @@ import reactRef from "../assets/Images/ReactRef.png";
 const projects = [
   {
     id: 1,
-    name: "Paste Application",
+    name: "Creator Coin",
     detail:
-      "Paste Application - Save, edit, delete your notes, code and information",
+      "Launch your own token Create a custom digital asset for your community or brand",
     logo: paste,
-    url: "https://paste-saving.vercel.app/",
-    techStack: ["React", "Tailwind", "Redux"],
-    githubUrl: "https://github.com/dhanush-adi/Paste-Application",
+    techStack: ["React", "Tailwind", "Avlanche"],
+    githubUrl: "https://github.com/vatsa2005/creator-coin",
   },
 
   {
     id: 2,
-    name: "Orbit Us",
+    name: "Reclaim",
     detail:
-      "Decentralised Drop Servicing Platform - Finding Freelancing work and create Job for free lancer",
+      "Find, Return, and Collect Your Bounty!",
     logo: orbitus,
-    url: "https://orbitus.vercel.app/",
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/dhanush-adi/Drop-Service---Orbit-Us",
+    githubUrl: "https://github.com/Nithesh8678/reclaim",
   },
   {
     id: 3,

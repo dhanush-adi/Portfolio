@@ -43,12 +43,6 @@ const V0projectCard = ({
           </div>
 
           <div className="flex gap-2 mt-2 sm:mt-0">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <button className="bg-neutral-700 text-neutral-200 rounded px-2 py-0.5 font-semibold text-[10px] sm:text-[11px] flex items-center justify-center cursor-pointer hover:bg-neutral-600 transition-colors">
-                Live
-              </button>
-            </a>
-
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
               <button className="bg-neutral-700 text-neutral-200 rounded px-2 py-0.5 font-semibold text-[10px] sm:text-[11px] flex items-center justify-center cursor-pointer hover:bg-neutral-600 transition-colors">
                 GitHub
