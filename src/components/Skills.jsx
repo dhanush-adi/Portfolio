@@ -2,9 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = [
-  "html", "css", "javascript", "react", "tailwind",
-  "redux", "typescript", "python", "cpp", "git",
-  "github", "vscode", "c", "vite", "vercel", "mysql",
+  "aws", "c", "cpp", "java", "spring",
+  "javascript", "html", "css", "docker", "express",
+  "firebase", "git", "github", "linux", "mongodb",
+  "mysql", "nodejs", "nextjs", "npm", "python",
+  "solidity", "typescript", "vscode", "stackoverflow",
 ];
 
 const containerVariants = {

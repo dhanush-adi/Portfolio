@@ -28,7 +28,7 @@ const projects = [
     detail:
       "Launch your own token Create a custom digital asset for your community or brand",
     logo: paste,
-    techStack: ["React", "Tailwind", "Avlanche"],
+    techStack: ["React", "Tailwind", "Avalanche"],
     githubUrl: "https://github.com/vatsa2005/creator-coin",
   },
 
@@ -291,15 +291,6 @@ const V0 = () => {
             </a>
           </div>
         </motion.div>
-
-        <div className="text-[10px] text-white flex justify-center   underline font-bold pb-10">
-          <NavLink
-                to="/version1"
-                className="text-white text-md hover:bg-neutral-700 px-2 py-0.5 rounded "
-              >
-                Version 1
-              </NavLink>
-        </div>
 
 
 
