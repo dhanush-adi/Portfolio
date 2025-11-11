@@ -1,6 +1,6 @@
-import dp from "../assets/Images/Orginal.jpg";
+import dp from "../assets/Images/ProfilePic.jpg";
 import ExperienceItem from "./ExperienceItem";
-import ck from "../assets/Images/download.jpeg";
+import ck from "../assets/Images/CK.jpeg";
 import SkillsDisplay from "./SkillsDisplay";
 import {
   IconBrandGithub,
@@ -9,8 +9,8 @@ import {
   IconCode,
 } from "@tabler/icons-react";
 import ProjectCardItem from "./ProjectCardItem"; 
-import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
-import paste from "../assets/Images/paste.png";
+import reclaim from "../assets/Images/reclaim.png";
+import CreatorCoin from "../assets/Images/CreatorCoin.png";
 import mediseal from "../assets/Images/Mediseal.jpg";
 import chatbot from "../assets/chatbot application.png";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ const projects = [
     name: "Creator Coin",
     detail:
       "Launch your own token Create a custom digital asset for your community or brand",
-    logo: paste,
+    logo: CreatorCoin,
     techStack: ["React", "Tailwind", "Avalanche"],
     githubUrl: "https://github.com/dhanush-adi/creator-coin",
   },
@@ -33,7 +33,7 @@ const projects = [
     name: "Reclaim",
     detail:
       "Find, Return, and Collect Your Bounty!",
-    logo: orbitus,
+    logo: reclaim,
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
     githubUrl: "https://github.com/dhanush-adi/Reclaim",
   },
