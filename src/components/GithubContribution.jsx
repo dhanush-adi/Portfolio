@@ -32,6 +32,11 @@ const GithubContribution = () => {
           username="dhanush-adi"
           colorScheme="dark"
           theme={theme}
+          year={new Date().getFullYear()}
+          blockMargin={4}
+          blockRadius={2}
+          blockSize={11}
+          fontSize={16}
         />
       </div>
       <a
