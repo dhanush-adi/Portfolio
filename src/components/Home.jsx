@@ -1,22 +1,20 @@
 import dp from "../assets/Images/Orginal.jpg";
-import V0exp from "./V0exp"; // Assuming V0exp handles its own responsiveness
+import ExperienceItem from "./ExperienceItem";
 import ck from "../assets/Images/download.jpeg";
-import V0skills from "./V0skills"; // Assuming V0skills handles its own responsiveness
+import SkillsDisplay from "./SkillsDisplay";
 import {
   IconBrandGithub,
   IconBrandX,
   IconBrandLinkedin,
   IconCode,
 } from "@tabler/icons-react";
-import V0projectCard from "./V0projectCard"; 
+import ProjectCardItem from "./ProjectCardItem"; 
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import mediseal from "../assets/Images/Mediseal.jpg";
 import chatbot from "../assets/chatbot application.png";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
-import V0Github from "./V0Github";
-import GitHubCalendar from "react-github-calendar";
+import GithubContribution from "./GithubContribution";
 import HeikiBackground from "../components/HeikiBackground";
 import reactRef from "../assets/Images/ReactRef.png";
 const projects = [
@@ -82,7 +80,7 @@ const exp = [
   },
 ];
 
-const V0 = () => {
+const Home = () => {
   return (
     <div className="w-full min-h-screen relative">
       {/* main section */}
@@ -169,7 +167,7 @@ const V0 = () => {
           </h1>
 
           {exp.map((e) => (
-            <V0exp
+            <ExperienceItem
               key={e.id}
               name={e.name}
               position={e.position}
@@ -181,11 +179,11 @@ const V0 = () => {
         </motion.div>
 
         {/* GitHub contribution calendar */}
-        <V0Github />
+        <GithubContribution />
 
         {/* skills section */}
         <motion.div
-          className="px-4 sm:px-8" // Ensure consistent padding
+          className="px-4 sm:px-8"
           initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{
@@ -193,7 +191,7 @@ const V0 = () => {
             ease: "easeInOut",
           }}
         >
-          <V0skills />
+          <SkillsDisplay />
         </motion.div>
 
         {/* Project sections */}
@@ -216,7 +214,7 @@ const V0 = () => {
             {/* Adjusted grid for responsiveness: 1 column on small, 2 on medium and up */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
               {projects.map((pr) => (
-                <V0projectCard
+                <ProjectCardItem
                   key={pr.id}
                   name={pr.name}
                   logo={pr.logo}
@@ -289,4 +287,4 @@ const V0 = () => {
   );
 };
 
-export default V0;
+export default Home;

@@ -27,7 +27,7 @@ const skills = [
   "stackoverflow",
 ];
 
-const V0skills = () => {
+const SkillsDisplay = () => {
   return (
     <section className="max-w-2xl mx-auto">
       <h1 className="text-white font-semibold text-lg  sm:text-xl mt-8 mb-4">
@@ -51,4 +51,4 @@ const V0skills = () => {
   );
 };
 
-export default V0skills;
+export default SkillsDisplay;

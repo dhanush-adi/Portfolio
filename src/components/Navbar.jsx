@@ -1,150 +1,145 @@
 import React, { useState } from "react";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconBrandLinkedin,
-  IconCode,
-} from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
+import {
+  Github,
+  Code,
+  Briefcase,
+  
+} from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <div className="w-full mx-auto py-4 sm:py-6 lg:py-8 bg-slate-50">
-      <header className="flex justify-between items-center w-full px-4 sm:px-6 md:max-w-[60%] lg:max-w-[60%] sm:max-w-[80%] mx-auto">
+    <section className="">
+      <section className="text-white max-w-2xl  mx-auto px-14 flex justify-between items-center pt-15 md:h-12 relative">
+        {/* Left Side: Logo */}
         <div>
           <NavLink
             to="/"
             className="text-[12px] sm:text-[14px] font-medium font-saans"
           >
-            da
+            dA
           </NavLink>
         </div>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {isMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
-
-        {/* Desktop navigation */}
-        <nav className="hidden md:block">
-          <ul className="flex space-x-4 text-[12px] sm:text-[14px]">
-            <li>
-              <a
-                href="https://github.com/rachitdhaka"
-                className="hover:underline font-saans"
-              >
-                <IconBrandGithub stroke={1} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/rachitdhaka_"
-                className="hover:underline font-saans"
-              >
-                <IconBrandX stroke={1} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/rachitdhaka/"
-                className="hover:underline font-saans"
-              >
-                <IconBrandLinkedin stroke={1} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://codolio.com/profile/rachitdhaka"
-                className="hover:underline font-saans"
-              >
-                <IconCode stroke={1} />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      {/* Fullscreen Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-50 animate-fadeIn md:hidden">
+        {/* Hamburger for mobile */}
+        <div className="md:hidden">
           <button
-            onClick={toggleMenu}
-            className="absolute top-4 right-4 text-2xl font-bold"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex gap-2">
+          <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
+            {/* Tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              Projects
+            </div>
+
+
+
+          </div>
+          <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
+            <a
+        href="https://github.com/dhanush-adi"
+              target="_blank"
+              className="text-[12px] sm:text-[14px] font-medium font-saans "
+            >
+              <div className="py-1">
+                <Github
+                  size={20}
+                  color="#ffffff"
+                  strokeWidth={1.5}
+                  className="hover:text-gray-300 "
+                />
+              </div>
+            </a>
+            {/* Tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              GitHub
+            </div>
+          </div>
+          <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
+            <a
+              href="https://codolio.com/profile/dhanush_adi"
+              target="_blank"
+              className="text-[12px] sm:text-[14px] font-medium font-saans"
+            >
+              <div className="py-1">
+                <Code
+                  size={20}
+                  color="#ffffff"
+                  strokeWidth={1.5}
+                  className="hover:text-gray-300 "
+                />
+              </div>
+            </a>
+            {/* Tooltip */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              Codolio
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fullscreen Mobile Dropdown */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-black text-white flex flex-col items-center justify-center gap-6 text-[16px] font-medium">
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-5 right-5 text-3xl"
             aria-label="Close menu"
           >
             ✕
           </button>
-          <nav>
-            <ul className="flex flex-col space-y-6 text-[18px] font-medium text-center">
-              <li>
-                <a
-                  href="https://github.com/rachitdhaka"
-                  className="hover:underline font-saans"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://x.com/rachitdhaka_"
-                  className="hover:underline font-saans"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/rachitdhaka/"
-                  className="hover:underline font-saans"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://codolio.com/profile/rachitdhaka"
-                  className="hover:underline font-saans"
-                >
-                  Coding
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>
+            Projects
+          </NavLink>
+          <a
+            href="https://github.com/rachitdhaka"
+            target="_blank"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Github
+          </a>
+          <a
+            href="https://codolio.com/profile/dhanush_adi"
+            target="_blank"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Codolio
+          </a>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

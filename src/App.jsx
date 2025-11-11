@@ -1,8 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import V1 from "./components/V1";
-import V0 from "./components/V0";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import V0Navbar from "./components/V0Navbar";
 import HeikiBackground from "./components/HeikiBackground"
 
 const router = createBrowserRouter(
@@ -11,19 +9,10 @@ const router = createBrowserRouter(
       path:"/",
       element:
       <div> 
-         <V0Navbar/>
-        <V0/>
+         <Navbar/>
+        <Home/>
       </div>
         
-    },
-
-    {
-      path:"/version1",
-      element:
-        <div>
-          <Navbar/>
-          <V1/>
-        </div>
     }
 
   ]
