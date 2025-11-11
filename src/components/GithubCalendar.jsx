@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { IconBrandGithub } from "@tabler/icons-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 function GithubCalendar() {
   const [totalCount, setTotalCount] = useState(0);
@@ -34,14 +34,7 @@ function GithubCalendar() {
     ]
   };
 
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
+  // removed unused containerVariants
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -71,7 +64,7 @@ function GithubCalendar() {
           className="bg-white p-4 flex flex-col justify-self-center rounded-xl shadow-md"
         >
           <GitHubCalendar
-            username="rachitdhaka"
+            username="dhanush-adi"
             transformData={processContributions}
             totalCount={totalCount}
             theme={theme}
@@ -83,7 +76,7 @@ function GithubCalendar() {
           className="flex justify-center mt-5"
         >
           <a
-            href="https://github.com/rachitdhaka"
+            href="https://github.com/dhanush-adi"
             target="_blank"
             rel="noopener noreferrer"
           >

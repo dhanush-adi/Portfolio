@@ -5,12 +5,11 @@ import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
 import game from "../assets/Images/game.png";
 import { motion } from "motion/react";
-import { div, section } from "motion/react-client";
 
 const projects = [
   {
     id: 1,
-    title: "Eth Link",
+    title: "Reclaim",
     description: "Decentralised Job Searching Platform",
     image: ethlinkImg,
     url: "https://eth-link-vcpn.vercel.app/",

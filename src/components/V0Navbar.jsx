@@ -59,19 +59,6 @@ const V0Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-2">
           <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
-            <NavLink
-              to="/projects"
-              className="text-[12px] sm:text-[14px] font-medium font-saans"
-            >
-              <div className="py-1">
-                <Briefcase
-                  size={20}
-                  color="#ffffff"
-                  strokeWidth={1.5}
-                  className="hover:text-gray-300 "
-                />
-              </div>
-            </NavLink>
             {/* Tooltip */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
               Projects
@@ -117,7 +104,7 @@ const V0Navbar = () => {
             </a>
             {/* Tooltip */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-              LeetCode
+              Codolio
             </div>
           </div>
         </div>

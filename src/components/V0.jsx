@@ -9,15 +9,13 @@ import {
   IconCode,
 } from "@tabler/icons-react";
 import V0projectCard from "./V0projectCard"; 
-import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
+import mediseal from "../assets/Images/Mediseal.jpg";
 import chatbot from "../assets/chatbot application.png";
-import game from "../assets/Images/game.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import V0Github from "./V0Github";
-import weather from "../assets/Images/weather.png";
 import GitHubCalendar from "react-github-calendar";
 import HeikiBackground from "../components/HeikiBackground";
 import reactRef from "../assets/Images/ReactRef.png";
@@ -29,7 +27,7 @@ const projects = [
       "Launch your own token Create a custom digital asset for your community or brand",
     logo: paste,
     techStack: ["React", "Tailwind", "Avalanche"],
-    githubUrl: "https://github.com/vatsa2005/creator-coin",
+    githubUrl: "https://github.com/dhanush-adi/creator-coin",
   },
 
   {
@@ -39,17 +37,16 @@ const projects = [
       "Find, Return, and Collect Your Bounty!",
     logo: orbitus,
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/Nithesh8678/reclaim",
+    githubUrl: "https://github.com/dhanush-adi/Reclaim",
   },
   {
     id: 3,
-    name: "Eth Link",
+    name: "MediSeal",
     detail:
-      "Decentralised Job Seacrhing Portal - ETHLink leverages Web3 to offer a secure, trust-based job search platform with verified companies and candidates.",
-    logo: ethlinkImg,
-    url: "https://eth-link-vcpn.vercel.app/",
+      "MediSeal is a revolutionary blockchain-based pharmaceutical supply chain management system",
+    logo: mediseal,
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
-    githubUrl: "https://github.com/dhanush-adi/EthLink",
+    githubUrl: "https://github.com/dhanush-adi/MediSeal",
   },
 
   {
@@ -212,14 +209,6 @@ const V0 = () => {
           <div className=" flex justify-between ">
             <div className="text-white font-semibold text-lg sm:text-xl mt-8 mb-4">
               Projects
-            </div>
-            <div className="font-saans mt-8 mb-4">
-              <NavLink
-                to="/projects"
-                className="text-white text-md hover:bg-neutral-700 px-2 py-0.5 rounded "
-              >
-                View All
-              </NavLink>
             </div>
           </div>
 
