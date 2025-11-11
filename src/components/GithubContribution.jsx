@@ -3,10 +3,6 @@ import GitHubCalendar from "react-github-calendar";
 import { IconBrandGithub } from "@tabler/icons-react";
 
 const GithubContribution = () => {
-  // Calculate date range: August 1st to today
-  const today = new Date();
-  const augustFirst = new Date(today.getFullYear(), 7, 1); // Month is 0-indexed, so 7 = August
-  
   const theme = {
     light: [
       "#ebedf0", // Level 0
@@ -36,12 +32,6 @@ const GithubContribution = () => {
           username="dhanush-adi"
           colorScheme="dark"
           theme={theme}
-          from={augustFirst}
-          to={today}
-          blockMargin={4}
-          blockRadius={2}
-          blockSize={11}
-          fontSize={16}
         />
       </div>
       <a

@@ -120,11 +120,8 @@ const Navbar = () => {
           >
             ✕
           </button>
-          <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>
-            Projects
-          </NavLink>
           <a
-            href="https://github.com/rachitdhaka"
+            href="https://github.com/dhanush-adi"
             target="_blank"
             onClick={() => setIsMenuOpen(false)}
           >
