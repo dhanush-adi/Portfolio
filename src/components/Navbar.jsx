@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  Github,
-  Code,
-  Briefcase,
-  
-} from "lucide-react";
+import { Github, Code } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <section className="">
-      <section className="text-white max-w-2xl  mx-auto px-14 flex justify-between items-center pt-15 md:h-12 relative">
+    <>
+      <section className="text-white max-w-2xl mx-auto px-14 flex justify-between items-center pt-15 md:h-12 relative">
         {/* Left Side: Logo */}
         <div>
           <NavLink
@@ -59,17 +54,8 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-2">
           <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
-            {/* Tooltip */}
-            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-              Projects
-            </div>
-
-
-
-          </div>
-          <div className="hover:bg-neutral-700 px-2 py-0.5 rounded relative group">
             <a
-        href="https://github.com/dhanush-adi"
+              href="https://github.com/dhanush-adi"
               target="_blank"
               className="text-[12px] sm:text-[14px] font-medium font-saans "
             >
@@ -136,7 +122,7 @@ const Navbar = () => {
           </a>
         </div>
       )}
-    </section>
+    </>
   );
 };
 
