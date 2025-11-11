@@ -31,7 +31,7 @@ export default [
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       'no-unused-vars': ['error', { 
-        varsIgnorePattern: '^[A-Z_]|^motion$',
+        varsIgnorePattern: '^[A-Z_]|^motion$|^get',
         args: 'after-used',
         ignoreRestSiblings: true
       }],

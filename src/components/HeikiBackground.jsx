@@ -22,7 +22,8 @@ const HeikiBackground = ({
   pattern = "blocks", // 'grid' or 'blocks'
 }) => {
   // Generate random positions for shapes
-  const _getRandomShapes = () => {
+  // Note: This function is prepared for future use
+  const getRandomShapes = () => {
     const densityMap = {
       sparse: 24,
       medium: 40,

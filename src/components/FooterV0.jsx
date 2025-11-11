@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
-const FooterV0 = () => {
+const Footer = () => {
   return (
     <div>
       <div className="text-[16px] font-medium text-[#9b9b9b] flex justify-center gap-7 ">
@@ -39,9 +38,9 @@ const FooterV0 = () => {
       </div>
 
       <div className="text-[10px] text-[#9b9b9b] font-bold underline flex justify-center mt-4">
-        <NavLink to="/">
+        <a href="/">
             v1
-        </NavLink>
+        </a>
       </div>
       
       <div className="text-white/50 text-center py-4 text-xs">
@@ -51,4 +50,4 @@ const FooterV0 = () => {
   );
 };
 
-export default FooterV0;
+export default Footer;

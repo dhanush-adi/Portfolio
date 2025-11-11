@@ -3,7 +3,6 @@ import React from "react";
 import ethlinkImg from "../assets/Images/image.png";
 import orbitus from "../assets/Images/83262276-ed3d-4038-83e9-4798ff38811c.png";
 import paste from "../assets/Images/paste.png";
-import game from "../assets/Images/game.png";
 import { motion } from "motion/react";
 
 const projects = [
@@ -27,13 +26,6 @@ const projects = [
     description: "Save your notes , code , Information .",
     image: paste,
     url: "https://paste-saving.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Tic Tac Toe",
-    description: "Simple Game.",
-    image: game,
-    url: "https://tictactoe-rachit.vercel.app/",
   },
 ];
 

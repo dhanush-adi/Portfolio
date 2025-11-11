@@ -1,13 +1,10 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-// Removed unused asset imports
 import dp from "../assets/Images/Orginal.jpg"
 
-import FooterV1 from "./FooterV1";
-import { NavLink } from "react-router-dom";
+import Footer from "./FooterV1";
 import Skills from "./Skills";
 import GithubCalendar from "./GithubCalendar";
-// motion import removed (was unused)
 
 // previously defined local projects array removed (unused)
 
@@ -78,8 +75,7 @@ const V1 = () => {
               - A Podcast Platform for Voices That Matter
             </p>
 
-            <NavLink to="/about">
-              <button
+            <button
                 className="bg-neutral-700 text-white px-4 py-2 mt-4 rounded-4xl hover:scale-110 duration-300 flex items-center gap-2 cursor-pointer hover:bg-neutral-950"
               >
                 More Information
@@ -98,7 +94,6 @@ const V1 = () => {
                   />
                 </svg>
               </button>
-            </NavLink>
           </section>
         </main>
         <hr className="border-gray-200 my-1" />
@@ -116,7 +111,7 @@ const V1 = () => {
       <Skills />
 
       {/* Footer */}
-      <FooterV1 />
+      <Footer />
     </div>
   );
 };

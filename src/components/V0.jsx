@@ -180,7 +180,7 @@ const V0 = () => {
           ))}
         </motion.div>
 
-        {/* guthub contribution calndar  */}
+        {/* GitHub contribution calendar */}
         <V0Github />
 
         {/* skills section */}

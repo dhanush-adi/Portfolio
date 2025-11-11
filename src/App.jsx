@@ -1,8 +1,6 @@
-import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import V1 from "./components/V1";
 import V0 from "./components/V0";
-import FooterV0 from "./components/FooterV0";
-import FooterV1 from "./components/FooterV1";
 import Navbar from "./components/Navbar";
 import V0Navbar from "./components/V0Navbar";
 import HeikiBackground from "./components/HeikiBackground"
