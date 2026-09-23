@@ -1,6 +1,4 @@
-import React from "react";
-
-const ExperienceItem = ({ logo, name, position, sd, ed }) => {
+const ExperienceItem = ({ logo, name, position, startDate, endDate }) => {
   return (
     <section className="max-w-2xl w-full px-4 sm:px-8 mt-3">
       <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
@@ -21,7 +19,7 @@ const ExperienceItem = ({ logo, name, position, sd, ed }) => {
 
         {/* Date Range */}
         <div className="text-neutral-400 text-xs flex-shrink-0 whitespace-nowrap">
-          {sd} <span className="mx-1">-</span> {ed}
+          {startDate} <span className="mx-1">-</span> {endDate}
         </div>
       </div>
     </section>
@@ -29,3 +27,4 @@ const ExperienceItem = ({ logo, name, position, sd, ed }) => {
 };
 
 export default ExperienceItem;
+
