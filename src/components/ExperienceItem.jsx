@@ -1,14 +1,27 @@
 const ExperienceItem = ({ logo, name, position, startDate, endDate }) => {
+  const initials = name
+    .split(" ")
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase();
+
   return (
     <section className="max-w-2xl w-full px-4 sm:px-8 mt-3">
       <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
-        {/* Logo */}
+        {/* Logo or initials fallback */}
         <div className="w-10 h-10 flex-shrink-0">
-          <img
-            src={logo}
-            alt={name}
-            className="w-full h-full object-cover rounded-full"
-          />
+          {logo ? (
+            <img
+              src={logo}
+              alt={name}
+              className="w-full h-full object-cover rounded-full"
+            />
+          ) : (
+            <div className="w-full h-full rounded-full bg-neutral-700 flex items-center justify-center text-white text-xs font-semibold">
+              {initials}
+            </div>
+          )}
         </div>
 
         {/* Company Info */}

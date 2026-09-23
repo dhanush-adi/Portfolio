@@ -1,6 +1,7 @@
 import dp from "../assets/Images/ProfilePic.jpg";
 import ExperienceItem from "./ExperienceItem";
 import ck from "../assets/Images/CK.jpeg";
+import studio247 from "../assets/Images/247.png";
 import SkillsDisplay from "./SkillsDisplay";
 import {
   IconBrandGithub,
@@ -65,6 +66,14 @@ const projects = [
 const experiences = [
   {
     id: 1,
+    name: "HHG'26 | 2:47 PM Studio",
+    position: "Tech Team Member",
+    logo: studio247,
+    startDate: "Mar 2026",
+    endDate: "Present",
+  },
+  {
+    id: 2,
     name: "Code Krafters",
     position: "Member → Lead → Head",
     logo: ck,
@@ -116,8 +125,7 @@ const Home = () => {
         <motion.div className="px-4 sm:px-8 mt-4 sm:mt-0" {...fadeUp}>
           <h2 className="text-white font-semibold text-lg sm:text-xl mb-2">About</h2>
           <p className="text-neutral-400 tracking-tight text-sm sm:text-base">
-            Computer Science &amp; Engineering Junior | Web3 / Blockchain Enthusiast | Currently
-            practising Competitive Programming and Web Development.
+            Computer Science & Engineering Student | Building Software, Full-Stack Apps & Web3 Projects | Exploring AI Tools & AI Agents
           </p>
         </motion.div>
 
