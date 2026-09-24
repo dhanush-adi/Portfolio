@@ -13,10 +13,10 @@ const ProjectCardItem = ({
         <div className="p-2">
           <a href={url} target="_blank" >
             <img
-            src={logo}
-            alt={`Preview of ${name}`}
-            className="w-full h-32 sm:h-40 rounded-lg object-cover aspect-video"
-          />
+              src={logo}
+              alt={`Preview of ${name}`}
+              className="block w-full h-auto rounded-lg object-contain"
+            />
           </a>
         </div>
 

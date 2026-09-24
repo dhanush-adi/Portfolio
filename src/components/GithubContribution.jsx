@@ -26,7 +26,7 @@ const GithubContribution = () => {
         </h1>
   
 
-      <div className="overflow-auto px-10 bg-[#0a0a0a] p-4 rounded-3xl text-white">
+      <div className="contribution-scrollbar overflow-x-auto overflow-y-hidden px-10 bg-[#0a0a0a] p-4 rounded-3xl text-white">
         <GitHubCalendar
           username="dhanush-adi"
           colorScheme="dark"
