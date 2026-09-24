@@ -13,14 +13,24 @@ import ProjectCardItem from "./ProjectCardItem";
 import reclaim from "../assets/Images/reclaim.png";
 import CreatorCoin from "../assets/Images/CreatorCoin.png";
 import mediseal from "../assets/Images/Mediseal.jpg";
-import chatbot from "../assets/chatbot-app.png";
+import hhgoa from "../assets/Images/HHG.png";
+import zkSolvency from "../assets/Images/zk-solvency.png";
+import sorosub from "../assets/Images/Sorosub.png";
 import { motion } from "framer-motion";
 import GithubContribution from "./GithubContribution";
-import reactRef from "../assets/Images/ReactRef.png";
 
 const projects = [
   {
     id: 1,
+    name: "Hacker House Goa",
+    detail: "Landing page and registration platform for Hacker House Goa 2026.",
+    logo: hhgoa,
+    url: "https://hhgoa.com/",
+    techStack: ["Next.js", "React", "Tailwind", "Framer Motion"],
+    githubUrl: "https://github.com/dhanush-adi/hhgoa2026",
+  },
+  {
+    id: 2,
     name: "Creator Coin",
     detail: "Launch your own token — create a custom digital asset for your community or brand.",
     logo: CreatorCoin,
@@ -28,7 +38,7 @@ const projects = [
     githubUrl: "https://github.com/dhanush-adi/creator-coin",
   },
   {
-    id: 2,
+    id: 3,
     name: "Reclaim",
     detail: "Find, Return, and Collect Your Bounty!",
     logo: reclaim,
@@ -36,30 +46,28 @@ const projects = [
     githubUrl: "https://github.com/dhanush-adi/Reclaim",
   },
   {
-    id: 3,
+    id: 4,
+    name: "ZK-Solvency",
+    detail: "Zero-knowledge solvency verification platform for centralized exchanges using zkTLS & zk-STARKs.",
+    logo: zkSolvency,
+    techStack: ["Next.js", "StarkNet", "Cairo", "zkTLS"],
+    githubUrl: "https://github.com/dhanush-adi/zk-solvency",
+  },
+  {
+    id: 5,
+    name: "SoroSub",
+    detail: "Decentralized recurring payment protocol with on-chain credit scoring and BNPL micro-loans on Stellar.",
+    logo: sorosub,
+    techStack: ["Next.js", "Soroban", "Stellar", "Rust"],
+    githubUrl: "https://github.com/dhanush-adi/Sorosub",
+  },
+  {
+    id: 6,
     name: "MediSeal",
     detail: "A blockchain-based pharmaceutical supply chain management system.",
     logo: mediseal,
     techStack: ["React", "Tailwind", "Solidity", "Web3"],
     githubUrl: "https://github.com/dhanush-adi/MediSeal",
-  },
-  {
-    id: 4,
-    name: "Chat Bot Application",
-    detail: "AI-powered chat bot built with Google AI and React.",
-    logo: chatbot,
-    url: "https://chatbot-rachit.vercel.app/",
-    techStack: ["React", "Tailwind", "API", "Google AI"],
-    githubUrl: "https://github.com/dhanush-adi/Chat-Bot-Application",
-  },
-  {
-    id: 5,
-    name: "React Ref Website",
-    detail: "A reference site for React concepts and patterns.",
-    logo: reactRef,
-    url: "https://reactref.vercel.app/",
-    techStack: ["React", "Tailwind"],
-    githubUrl: "https://github.com/dhanush-adi/React-Ref",
   },
 ];
 
