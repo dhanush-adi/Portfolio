@@ -26,7 +26,7 @@ const projects = [
     detail: "Landing page and registration platform for Hacker House Goa 2026.",
     logo: hhgoa,
     url: "https://hhgoa.com/",
-    techStack: ["Next.js", "React", "Tailwind", "Framer Motion"],
+    techStack: ["Next.js", "React", "Tailwind"],
     githubUrl: "https://github.com/dhanush-adi/hhgoa2026",
   },
   {
